@@ -6,5 +6,12 @@ namespace DijitalKütüphane.UI
         {
             InitializeComponent();
         }
+
+        private void btnGirisYap_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.ShowDialog();
+            this.Hide();
+        }
     }
 }
