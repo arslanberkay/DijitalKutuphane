@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            label1 = new Label();
-            txtKullaniciAdi = new TextBox();
+            btnGirisYap = new Button();
             label2 = new Label();
             txtSifre = new TextBox();
-            btnGirisYap = new Button();
+            txtKullaniciAdi = new TextBox();
+            label1 = new Label();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -44,31 +44,24 @@
             groupBox1.Controls.Add(txtSifre);
             groupBox1.Controls.Add(txtKullaniciAdi);
             groupBox1.Controls.Add(label1);
-            groupBox1.Location = new Point(136, 87);
-            groupBox1.Margin = new Padding(4, 4, 4, 4);
+            groupBox1.Location = new Point(66, 63);
+            groupBox1.Margin = new Padding(4);
             groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(4, 4, 4, 4);
+            groupBox1.Padding = new Padding(4);
             groupBox1.Size = new Size(386, 258);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Kullanıcı Bilgileri";
             // 
-            // label1
+            // btnGirisYap
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(30, 49);
-            label1.Margin = new Padding(4, 0, 4, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(120, 28);
-            label1.TabIndex = 0;
-            label1.Text = "Kullanıcı Adı";
-            // 
-            // txtKullaniciAdi
-            // 
-            txtKullaniciAdi.Location = new Point(153, 49);
-            txtKullaniciAdi.Name = "txtKullaniciAdi";
-            txtKullaniciAdi.Size = new Size(199, 34);
-            txtKullaniciAdi.TabIndex = 1;
+            btnGirisYap.Location = new Point(30, 164);
+            btnGirisYap.Name = "btnGirisYap";
+            btnGirisYap.Size = new Size(322, 55);
+            btnGirisYap.TabIndex = 3;
+            btnGirisYap.Text = "Giriş Yap";
+            btnGirisYap.UseVisualStyleBackColor = true;
+            btnGirisYap.Click += btnGirisYap_Click;
             // 
             // label2
             // 
@@ -86,24 +79,31 @@
             txtSifre.Size = new Size(199, 34);
             txtSifre.TabIndex = 1;
             // 
-            // btnGirisYap
+            // txtKullaniciAdi
             // 
-            btnGirisYap.Location = new Point(30, 164);
-            btnGirisYap.Name = "btnGirisYap";
-            btnGirisYap.Size = new Size(322, 55);
-            btnGirisYap.TabIndex = 3;
-            btnGirisYap.Text = "Giriş Yap";
-            btnGirisYap.UseVisualStyleBackColor = true;
-            btnGirisYap.Click += btnGirisYap_Click;
+            txtKullaniciAdi.Location = new Point(153, 49);
+            txtKullaniciAdi.Name = "txtKullaniciAdi";
+            txtKullaniciAdi.Size = new Size(199, 34);
+            txtKullaniciAdi.TabIndex = 1;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(30, 49);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(120, 28);
+            label1.TabIndex = 0;
+            label1.Text = "Kullanıcı Adı";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(668, 446);
+            ClientSize = new Size(517, 386);
             Controls.Add(groupBox1);
             Font = new Font("Segoe UI", 12F);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "Form1";
             Text = "Form1";
             groupBox1.ResumeLayout(false);
