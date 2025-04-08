@@ -58,6 +58,7 @@
             // 
             // dgvUyeler
             // 
+            dgvUyeler.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             dgvUyeler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvUyeler.Location = new Point(37, 63);
             dgvUyeler.Margin = new Padding(4);
@@ -219,7 +220,7 @@
             grpUyeIslemleri.Controls.Add(txtIsim);
             grpUyeIslemleri.Controls.Add(label6);
             grpUyeIslemleri.Controls.Add(txtId);
-            grpUyeIslemleri.Location = new Point(37, 367);
+            grpUyeIslemleri.Location = new Point(37, 358);
             grpUyeIslemleri.Name = "grpUyeIslemleri";
             grpUyeIslemleri.Size = new Size(818, 244);
             grpUyeIslemleri.TabIndex = 4;
@@ -237,7 +238,7 @@
             // 
             // btnUyeEkle
             // 
-            btnUyeEkle.Location = new Point(37, 629);
+            btnUyeEkle.Location = new Point(37, 608);
             btnUyeEkle.Name = "btnUyeEkle";
             btnUyeEkle.Size = new Size(181, 39);
             btnUyeEkle.TabIndex = 5;
@@ -247,7 +248,7 @@
             // 
             // btnUyeSil
             // 
-            btnUyeSil.Location = new Point(246, 629);
+            btnUyeSil.Location = new Point(246, 608);
             btnUyeSil.Name = "btnUyeSil";
             btnUyeSil.Size = new Size(180, 39);
             btnUyeSil.TabIndex = 5;
@@ -257,7 +258,7 @@
             // 
             // btnUyeGuncelle
             // 
-            btnUyeGuncelle.Location = new Point(454, 629);
+            btnUyeGuncelle.Location = new Point(454, 608);
             btnUyeGuncelle.Name = "btnUyeGuncelle";
             btnUyeGuncelle.Size = new Size(190, 39);
             btnUyeGuncelle.TabIndex = 5;
@@ -267,7 +268,7 @@
             // 
             // btnUyeTemizle
             // 
-            btnUyeTemizle.Location = new Point(672, 629);
+            btnUyeTemizle.Location = new Point(672, 608);
             btnUyeTemizle.Name = "btnUyeTemizle";
             btnUyeTemizle.Size = new Size(181, 39);
             btnUyeTemizle.TabIndex = 5;
@@ -279,7 +280,7 @@
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1750, 727);
+            ClientSize = new Size(1750, 688);
             Controls.Add(btnUyeTemizle);
             Controls.Add(btnUyeGuncelle);
             Controls.Add(btnUyeSil);

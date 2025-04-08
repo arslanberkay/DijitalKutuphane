@@ -24,7 +24,7 @@ namespace DijitalKütüphane.UI
         {
             if (string.IsNullOrWhiteSpace(txtKullaniciAdi.Text))
             {
-                MessageBox.Show("Kullanıcı Adı alanı doldurulmalıdır!");
+                MessageBox.Show("Kullanıcı adı alanı doldurulmalıdır!");
                 Temizle();
                 return;
             }

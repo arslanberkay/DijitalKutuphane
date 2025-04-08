@@ -102,7 +102,7 @@ namespace DijitalKütüphane.UI
             txtKullaniciAdi.Text = seciliKullanici.KullaniciAdi;
             txtSifre.Text = seciliKullanici.Sifre;
             txtYetki.Text = seciliKullanici.Yetki;
-            mtxtOlusturulmaTarihi.Text = seciliKullanici.OlusturulmaTarihi.ToString();
+            mtxtOlusturulmaTarihi.Text = seciliKullanici.OlusturulmaTarihi.ToString("dd-MM-yyyy HH:mm:ss" );
         }
     }
 }
