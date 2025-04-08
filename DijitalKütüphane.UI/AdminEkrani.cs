@@ -26,15 +26,30 @@ namespace DijitalKütüphane.UI
 
         private void btnUyeEkle_Click(object sender, EventArgs e)
         {
+            for (int i = 0; i < grpUyeIslemleri.Controls.Count; i++)
+            {
+                if ((grpUyeIslemleri.Controls[i] is TextBox txt && string.IsNullOrWhiteSpace(txt.Text)) || grpUyeIslemleri.Controls[i] is MaskedTextBox mtxt && string.IsNullOrWhiteSpace(mtxt.Text)) //TextBox veya MaskedTextBox boşsa
+                {
+                    MessageBox.Show("Lütfen boş alanları doldurunuz!");
+                    return;
+                }
+            }
 
             Kullanici yeniKullanici = new Kullanici();
-            yeniKullanici.Id = Convert.ToInt32(txtId.Text);
-            yeniKullanici.Isim = txtIsim.Text;
-            yeniKullanici.Soyisim = txtSoyisim.Text;
-            yeniKullanici.KullaniciAdi = txtKullaniciAdi.Text;
-            yeniKullanici.Sifre = txtSifre.Text;
-            yeniKullanici.OlusturulmaTarihi = Convert.ToDateTime(mtxtOlusturulmaTarihi.Text);
-            yeniKullanici.Yetki = txtYetki.Text;
+            try
+            {
+                yeniKullanici.Id = Convert.ToInt32(txtId.Text);
+                yeniKullanici.Isim = txtIsim.Text;
+                yeniKullanici.Soyisim = txtSoyisim.Text;
+                yeniKullanici.KullaniciAdi = txtKullaniciAdi.Text;
+                yeniKullanici.Sifre = txtSifre.Text;
+                yeniKullanici.OlusturulmaTarihi = Convert.ToDateTime(mtxtOlusturulmaTarihi.Text);
+                yeniKullanici.Yetki = txtYetki.Text;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Lütfen bilgileri eksiksiz ve düzgün bir şekilde doldurunuz!");
+            }
 
             kullanicilar.Add(yeniKullanici);
 
@@ -51,6 +66,11 @@ namespace DijitalKütüphane.UI
 
         private void btnUyeSil_Click(object sender, EventArgs e)
         {
+            if (dgvUyeler.CurrentRow == null)
+            {
+                MessageBox.Show("Lütfen silme istediğiniz kullanıcıyı seçiniz!");
+                return;
+            }
             kullanicilar.RemoveAt(dgvUyeler.CurrentRow.Index);
 
             UyeTablosunuYenile();
@@ -58,15 +78,28 @@ namespace DijitalKütüphane.UI
 
         private void btnUyeGuncelle_Click(object sender, EventArgs e)
         {
+            if (dgvUyeler.CurrentRow == null)
+            {
+                MessageBox.Show("Lütfen güncellemek istediğiniz kullanıcıyı seçiniz!");
+                return;
+            }
             int index = dgvUyeler.CurrentRow.Index;
             Kullanici guncellenecekKullanici = kullanicilar[index];
-            guncellenecekKullanici.Id = Convert.ToInt32(txtId.Text);
-            guncellenecekKullanici.Isim = txtIsim.Text;
-            guncellenecekKullanici.Soyisim = txtSoyisim.Text;
-            guncellenecekKullanici.KullaniciAdi = txtKullaniciAdi.Text;
-            guncellenecekKullanici.Sifre = txtSifre.Text;
-            guncellenecekKullanici.OlusturulmaTarihi = Convert.ToDateTime(mtxtOlusturulmaTarihi.Text);
-            guncellenecekKullanici.Yetki = txtYetki.Text;
+            try
+            {
+                guncellenecekKullanici.Id = Convert.ToInt32(txtId.Text);
+                guncellenecekKullanici.Isim = txtIsim.Text;
+                guncellenecekKullanici.Soyisim = txtSoyisim.Text;
+                guncellenecekKullanici.KullaniciAdi = txtKullaniciAdi.Text;
+                guncellenecekKullanici.Sifre = txtSifre.Text;
+                guncellenecekKullanici.OlusturulmaTarihi = Convert.ToDateTime(mtxtOlusturulmaTarihi.Text);
+                guncellenecekKullanici.Yetki = txtYetki.Text;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Lütfen bilgileri eksiksiz ve düzgün bir şekilde doldurunuz!");
+                return;
+            }
 
             kullanicilar[index] = guncellenecekKullanici;
 
@@ -102,7 +135,7 @@ namespace DijitalKütüphane.UI
             txtKullaniciAdi.Text = seciliKullanici.KullaniciAdi;
             txtSifre.Text = seciliKullanici.Sifre;
             txtYetki.Text = seciliKullanici.Yetki;
-            mtxtOlusturulmaTarihi.Text = seciliKullanici.OlusturulmaTarihi.ToString("dd-MM-yyyy HH:mm:ss" );
+            mtxtOlusturulmaTarihi.Text = seciliKullanici.OlusturulmaTarihi.ToString("dd-MM-yyyy HH:mm:ss");
         }
     }
 }
