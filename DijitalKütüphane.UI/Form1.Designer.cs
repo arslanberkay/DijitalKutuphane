@@ -28,31 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            groupBox1 = new GroupBox();
+            grpKullaniciGirisi = new GroupBox();
             btnGirisYap = new Button();
             label2 = new Label();
             txtSifre = new TextBox();
             txtKullaniciAdi = new TextBox();
             label1 = new Label();
             pictureBox1 = new PictureBox();
-            groupBox1.SuspendLayout();
+            grpKullaniciGirisi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // groupBox1
+            // grpKullaniciGirisi
             // 
-            groupBox1.Controls.Add(btnGirisYap);
-            groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(txtSifre);
-            groupBox1.Controls.Add(txtKullaniciAdi);
-            groupBox1.Controls.Add(label1);
-            groupBox1.Location = new Point(42, 176);
-            groupBox1.Margin = new Padding(4);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(4);
-            groupBox1.Size = new Size(370, 258);
-            groupBox1.TabIndex = 0;
-            groupBox1.TabStop = false;
+            grpKullaniciGirisi.Controls.Add(btnGirisYap);
+            grpKullaniciGirisi.Controls.Add(label2);
+            grpKullaniciGirisi.Controls.Add(txtSifre);
+            grpKullaniciGirisi.Controls.Add(txtKullaniciAdi);
+            grpKullaniciGirisi.Controls.Add(label1);
+            grpKullaniciGirisi.Location = new Point(42, 176);
+            grpKullaniciGirisi.Margin = new Padding(4);
+            grpKullaniciGirisi.Name = "grpKullaniciGirisi";
+            grpKullaniciGirisi.Padding = new Padding(4);
+            grpKullaniciGirisi.Size = new Size(370, 258);
+            grpKullaniciGirisi.TabIndex = 0;
+            grpKullaniciGirisi.TabStop = false;
             // 
             // btnGirisYap
             // 
@@ -113,20 +113,21 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(459, 476);
             Controls.Add(pictureBox1);
-            Controls.Add(groupBox1);
+            Controls.Add(grpKullaniciGirisi);
             Font = new Font("Segoe UI", 12F);
             Margin = new Padding(4);
             Name = "Form1";
             Text = "Form1";
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
+            Load += Form1_Load;
+            grpKullaniciGirisi.ResumeLayout(false);
+            grpKullaniciGirisi.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private GroupBox groupBox1;
+        private GroupBox grpKullaniciGirisi;
         private Button btnGirisYap;
         private Label label2;
         private TextBox txtSifre;

@@ -15,11 +15,17 @@ namespace DijitalKütüphane.UI
             new Kullanici {Id = 4 , Isim = "Talha", Soyisim = "Din", KullaniciAdi="talhacan", OlusturulmaTarihi = DateTime.Now, Sifre = "6060",Yetki ="üye"}
         };
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            txtSifre.PasswordChar = '*';
+        }
+
         private void btnGirisYap_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtKullaniciAdi.Text))
             {
                 MessageBox.Show("Kullanıcı Adı alanı doldurulmalıdır!");
+                Temizle();
                 return;
             }
             if (string.IsNullOrWhiteSpace(txtSifre.Text))
@@ -47,6 +53,20 @@ namespace DijitalKütüphane.UI
             }
 
             MessageBox.Show("Geçersiz kullanıcı adı veya şifre!");
+            Temizle();
         }
+
+        private void Temizle()
+        {
+            for (int i = 0; i < grpKullaniciGirisi.Controls.Count; i++)
+            {
+                if (grpKullaniciGirisi.Controls[i] is TextBox txt)
+                {
+                    txt.Text = string.Empty;
+                }
+            }
+        }
+
+
     }
 }
