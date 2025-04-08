@@ -1,6 +1,6 @@
 ﻿namespace DijitalKütüphane.UI
 {
-    partial class Form2
+    partial class Form3
     {
         /// <summary>
         /// Required designer variable.
@@ -34,20 +34,20 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(186, 133);
+            label1.Location = new Point(374, 215);
             label1.Name = "label1";
-            label1.Size = new Size(53, 20);
-            label1.TabIndex = 0;
-            label1.Text = "Admin";
+            label1.Size = new Size(34, 20);
+            label1.TabIndex = 1;
+            label1.Text = "Üye";
             // 
-            // Form2
+            // Form3
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(858, 508);
+            ClientSize = new Size(800, 450);
             Controls.Add(label1);
-            Name = "Form2";
-            Text = "Form2";
+            Name = "Form3";
+            Text = "Form3";
             ResumeLayout(false);
             PerformLayout();
         }

@@ -9,6 +9,8 @@ namespace DijitalKütüphane.UI
     public class Kullanici
     {
         public int Id { get; set; }
+        public string Isim { get; set; }
+        public string Soyisim { get; set; }
         public string KullaniciAdi { get; set; }
         public string Sifre { get; set; }
         public string Yetki { get; set; } //Admin,üye 

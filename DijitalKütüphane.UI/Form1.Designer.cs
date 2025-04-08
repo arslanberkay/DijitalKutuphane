@@ -34,7 +34,9 @@
             txtSifre = new TextBox();
             txtKullaniciAdi = new TextBox();
             label1 = new Label();
+            pictureBox1 = new PictureBox();
             groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
@@ -44,18 +46,17 @@
             groupBox1.Controls.Add(txtSifre);
             groupBox1.Controls.Add(txtKullaniciAdi);
             groupBox1.Controls.Add(label1);
-            groupBox1.Location = new Point(66, 63);
+            groupBox1.Location = new Point(42, 176);
             groupBox1.Margin = new Padding(4);
             groupBox1.Name = "groupBox1";
             groupBox1.Padding = new Padding(4);
-            groupBox1.Size = new Size(386, 258);
+            groupBox1.Size = new Size(370, 258);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
-            groupBox1.Text = "Kullanıcı Bilgileri";
             // 
             // btnGirisYap
             // 
-            btnGirisYap.Location = new Point(30, 164);
+            btnGirisYap.Location = new Point(18, 164);
             btnGirisYap.Name = "btnGirisYap";
             btnGirisYap.Size = new Size(322, 55);
             btnGirisYap.TabIndex = 3;
@@ -66,7 +67,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(30, 107);
+            label2.Location = new Point(18, 107);
             label2.Name = "label2";
             label2.Size = new Size(51, 28);
             label2.TabIndex = 2;
@@ -74,14 +75,14 @@
             // 
             // txtSifre
             // 
-            txtSifre.Location = new Point(153, 101);
+            txtSifre.Location = new Point(141, 101);
             txtSifre.Name = "txtSifre";
             txtSifre.Size = new Size(199, 34);
             txtSifre.TabIndex = 1;
             // 
             // txtKullaniciAdi
             // 
-            txtKullaniciAdi.Location = new Point(153, 49);
+            txtKullaniciAdi.Location = new Point(141, 49);
             txtKullaniciAdi.Name = "txtKullaniciAdi";
             txtKullaniciAdi.Size = new Size(199, 34);
             txtKullaniciAdi.TabIndex = 1;
@@ -89,18 +90,29 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(30, 49);
+            label1.Location = new Point(18, 49);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(120, 28);
             label1.TabIndex = 0;
             label1.Text = "Kullanıcı Adı";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources._285655_user_icon;
+            pictureBox1.Location = new Point(93, 29);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(255, 172);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(517, 386);
+            ClientSize = new Size(459, 476);
+            Controls.Add(pictureBox1);
             Controls.Add(groupBox1);
             Font = new Font("Segoe UI", 12F);
             Margin = new Padding(4);
@@ -108,6 +120,7 @@
             Text = "Form1";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -119,5 +132,6 @@
         private TextBox txtSifre;
         private TextBox txtKullaniciAdi;
         private Label label1;
+        private PictureBox pictureBox1;
     }
 }
