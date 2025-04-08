@@ -26,6 +26,7 @@ namespace DijitalKütüphane.UI
 
         private void btnUyeEkle_Click(object sender, EventArgs e)
         {
+
             Kullanici yeniKullanici = new Kullanici();
             yeniKullanici.Id = Convert.ToInt32(txtId.Text);
             yeniKullanici.Isim = txtIsim.Text;
@@ -53,6 +54,55 @@ namespace DijitalKütüphane.UI
             kullanicilar.RemoveAt(dgvUyeler.CurrentRow.Index);
 
             UyeTablosunuYenile();
+        }
+
+        private void btnUyeGuncelle_Click(object sender, EventArgs e)
+        {
+            int index = dgvUyeler.CurrentRow.Index;
+            Kullanici guncellenecekKullanici = kullanicilar[index];
+            guncellenecekKullanici.Id = Convert.ToInt32(txtId.Text);
+            guncellenecekKullanici.Isim = txtIsim.Text;
+            guncellenecekKullanici.Soyisim = txtSoyisim.Text;
+            guncellenecekKullanici.KullaniciAdi = txtKullaniciAdi.Text;
+            guncellenecekKullanici.Sifre = txtSifre.Text;
+            guncellenecekKullanici.OlusturulmaTarihi = Convert.ToDateTime(mtxtOlusturulmaTarihi.Text);
+            guncellenecekKullanici.Yetki = txtYetki.Text;
+
+            kullanicilar[index] = guncellenecekKullanici;
+
+            UyeTablosunuYenile();
+
+            MessageBox.Show("Üye güncelleme işlemi başarıyla sonuçlandı.");
+
+        }
+
+        private void btnUyeTemizle_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < grpUyeIslemleri.Controls.Count; i++)
+            {
+                if (grpUyeIslemleri.Controls[i] is TextBox txt)
+                {
+                    txt.Text = string.Empty;
+                }
+                else if (grpUyeIslemleri.Controls[i] is MaskedTextBox mtxt)
+                {
+                    mtxt.Text = string.Empty;
+                }
+            }
+        }
+
+        private void dgvUyeler_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int seciliSatir = dgvUyeler.CurrentRow.Index;
+            Kullanici seciliKullanici = kullanicilar[seciliSatir];
+
+            txtId.Text = seciliKullanici.Id.ToString();
+            txtIsim.Text = seciliKullanici.Isim;
+            txtSoyisim.Text = seciliKullanici.Soyisim;
+            txtKullaniciAdi.Text = seciliKullanici.KullaniciAdi;
+            txtSifre.Text = seciliKullanici.Sifre;
+            txtYetki.Text = seciliKullanici.Yetki;
+            mtxtOlusturulmaTarihi.Text = seciliKullanici.OlusturulmaTarihi.ToString();
         }
     }
 }

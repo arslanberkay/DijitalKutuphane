@@ -59,7 +59,7 @@
             btnGirisYap.Location = new Point(18, 164);
             btnGirisYap.Name = "btnGirisYap";
             btnGirisYap.Size = new Size(322, 55);
-            btnGirisYap.TabIndex = 3;
+            btnGirisYap.TabIndex = 2;
             btnGirisYap.Text = "Giriş Yap";
             btnGirisYap.UseVisualStyleBackColor = true;
             btnGirisYap.Click += btnGirisYap_Click;
@@ -70,7 +70,7 @@
             label2.Location = new Point(18, 107);
             label2.Name = "label2";
             label2.Size = new Size(51, 28);
-            label2.TabIndex = 2;
+            label2.TabIndex = 0;
             label2.Text = "Şifre";
             // 
             // txtSifre
@@ -85,7 +85,7 @@
             txtKullaniciAdi.Location = new Point(141, 49);
             txtKullaniciAdi.Name = "txtKullaniciAdi";
             txtKullaniciAdi.Size = new Size(199, 34);
-            txtKullaniciAdi.TabIndex = 1;
+            txtKullaniciAdi.TabIndex = 0;
             // 
             // label1
             // 
@@ -94,7 +94,7 @@
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(120, 28);
-            label1.TabIndex = 0;
+            label1.TabIndex = 2;
             label1.Text = "Kullanıcı Adı";
             // 
             // pictureBox1

@@ -45,7 +45,7 @@
             txtSifre = new TextBox();
             label7 = new Label();
             txtIsim = new TextBox();
-            groupBox1 = new GroupBox();
+            grpUyeIslemleri = new GroupBox();
             mtxtOlusturulmaTarihi = new MaskedTextBox();
             btnUyeEkle = new Button();
             btnUyeSil = new Button();
@@ -53,7 +53,7 @@
             btnUyeTemizle = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvUyeler).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvKitaplar).BeginInit();
-            groupBox1.SuspendLayout();
+            grpUyeIslemleri.SuspendLayout();
             SuspendLayout();
             // 
             // dgvUyeler
@@ -66,6 +66,7 @@
             dgvUyeler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvUyeler.Size = new Size(818, 276);
             dgvUyeler.TabIndex = 0;
+            dgvUyeler.CellClick += dgvUyeler_CellClick;
             // 
             // label1
             // 
@@ -202,28 +203,28 @@
             txtIsim.Size = new Size(178, 34);
             txtIsim.TabIndex = 3;
             // 
-            // groupBox1
+            // grpUyeIslemleri
             // 
-            groupBox1.Controls.Add(mtxtOlusturulmaTarihi);
-            groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(txtYetki);
-            groupBox1.Controls.Add(label7);
-            groupBox1.Controls.Add(label5);
-            groupBox1.Controls.Add(txtSoyisim);
-            groupBox1.Controls.Add(label8);
-            groupBox1.Controls.Add(txtSifre);
-            groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(txtKullaniciAdi);
-            groupBox1.Controls.Add(label9);
-            groupBox1.Controls.Add(txtIsim);
-            groupBox1.Controls.Add(label6);
-            groupBox1.Controls.Add(txtId);
-            groupBox1.Location = new Point(37, 367);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(818, 244);
-            groupBox1.TabIndex = 4;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Üye İşlemleri";
+            grpUyeIslemleri.Controls.Add(mtxtOlusturulmaTarihi);
+            grpUyeIslemleri.Controls.Add(label3);
+            grpUyeIslemleri.Controls.Add(txtYetki);
+            grpUyeIslemleri.Controls.Add(label7);
+            grpUyeIslemleri.Controls.Add(label5);
+            grpUyeIslemleri.Controls.Add(txtSoyisim);
+            grpUyeIslemleri.Controls.Add(label8);
+            grpUyeIslemleri.Controls.Add(txtSifre);
+            grpUyeIslemleri.Controls.Add(label4);
+            grpUyeIslemleri.Controls.Add(txtKullaniciAdi);
+            grpUyeIslemleri.Controls.Add(label9);
+            grpUyeIslemleri.Controls.Add(txtIsim);
+            grpUyeIslemleri.Controls.Add(label6);
+            grpUyeIslemleri.Controls.Add(txtId);
+            grpUyeIslemleri.Location = new Point(37, 367);
+            grpUyeIslemleri.Name = "grpUyeIslemleri";
+            grpUyeIslemleri.Size = new Size(818, 244);
+            grpUyeIslemleri.TabIndex = 4;
+            grpUyeIslemleri.TabStop = false;
+            grpUyeIslemleri.Text = "Üye İşlemleri";
             // 
             // mtxtOlusturulmaTarihi
             // 
@@ -262,6 +263,7 @@
             btnUyeGuncelle.TabIndex = 5;
             btnUyeGuncelle.Text = "Güncelle";
             btnUyeGuncelle.UseVisualStyleBackColor = true;
+            btnUyeGuncelle.Click += btnUyeGuncelle_Click;
             // 
             // btnUyeTemizle
             // 
@@ -271,6 +273,7 @@
             btnUyeTemizle.TabIndex = 5;
             btnUyeTemizle.Text = "Temizle";
             btnUyeTemizle.UseVisualStyleBackColor = true;
+            btnUyeTemizle.Click += btnUyeTemizle_Click;
             // 
             // AdminEkrani
             // 
@@ -281,7 +284,7 @@
             Controls.Add(btnUyeGuncelle);
             Controls.Add(btnUyeSil);
             Controls.Add(btnUyeEkle);
-            Controls.Add(groupBox1);
+            Controls.Add(grpUyeIslemleri);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(dgvKitaplar);
@@ -293,8 +296,8 @@
             Load += AdminEkrani_Load;
             ((System.ComponentModel.ISupportInitialize)dgvUyeler).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvKitaplar).EndInit();
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
+            grpUyeIslemleri.ResumeLayout(false);
+            grpUyeIslemleri.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -318,7 +321,7 @@
         private TextBox txtSifre;
         private Label label7;
         private TextBox txtIsim;
-        private GroupBox groupBox1;
+        private GroupBox grpUyeIslemleri;
         private Button btnUyeEkle;
         private Button btnUyeSil;
         private Button btnUyeGuncelle;

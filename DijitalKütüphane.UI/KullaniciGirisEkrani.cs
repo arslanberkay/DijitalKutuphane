@@ -9,8 +9,8 @@ namespace DijitalKütüphane.UI
 
         List<Kullanici> kullanicilar = new List<Kullanici>
         {
-            new Kullanici{Id=1,Isim = "Berkay", Soyisim = "Arslan", KullaniciAdi="arslanberkay", OlusturulmaTarihi = new DateTime(2024,5,30), Sifre = "0618", Yetki = "admin"},
-            new Kullanici {Id = 2, Isim = "Doğa", Soyisim = "Yıldız", KullaniciAdi = "dogayildizz",OlusturulmaTarihi = new DateTime(2024,9,1), Sifre="0658", Yetki="admin"},
+            new Kullanici{Id=1,Isim = "Berkay", Soyisim = "Arslan", KullaniciAdi="arslanberkay", OlusturulmaTarihi = new DateTime(2024,05,30), Sifre = "0618", Yetki = "admin"},
+            new Kullanici {Id = 2, Isim = "Doğa", Soyisim = "Yıldız", KullaniciAdi = "dogayildizz",OlusturulmaTarihi = new DateTime(2024,09,01), Sifre="0658", Yetki="admin"},
             new Kullanici {Id = 3 , Isim = "Ekrem", Soyisim = "Hosanlı", KullaniciAdi="ekremcan", OlusturulmaTarihi = DateTime.Now, Sifre = "0660",Yetki ="üye"},
             new Kullanici {Id = 4 , Isim = "Talha", Soyisim = "Din", KullaniciAdi="talhacan", OlusturulmaTarihi = DateTime.Now, Sifre = "6060",Yetki ="üye"}
         };
