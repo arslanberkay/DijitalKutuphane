@@ -1,8 +1,8 @@
 namespace DijitalKütüphane.UI
 {
-    public partial class Form1 : Form
+    public partial class KullaniciGirisEkrani : Form
     {
-        public Form1()
+        public KullaniciGirisEkrani()
         {
             InitializeComponent();
         }
@@ -38,14 +38,14 @@ namespace DijitalKütüphane.UI
             {
                 if (kullanici.KullaniciAdi == txtKullaniciAdi.Text && kullanici.Sifre == txtSifre.Text && kullanici.Yetki == "admin")
                 {
-                    Form2 form2 = new Form2();
+                    AdminEkrani form2 = new AdminEkrani(kullanicilar);
                     form2.Show();
                     this.Hide();
                     return;
                 }
                 if (kullanici.KullaniciAdi == txtKullaniciAdi.Text && kullanici.Sifre == txtSifre.Text && kullanici.Yetki == "üye")
                 {
-                    Form3 form3 = new Form3();
+                    UyeEkrani form3 = new UyeEkrani();
                     form3.Show();
                     this.Hide();
                     return;

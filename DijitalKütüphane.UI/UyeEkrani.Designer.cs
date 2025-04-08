@@ -1,6 +1,6 @@
 ﻿namespace DijitalKütüphane.UI
 {
-    partial class Form3
+    partial class UyeEkrani
     {
         /// <summary>
         /// Required designer variable.
@@ -28,32 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
             SuspendLayout();
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(374, 215);
-            label1.Name = "label1";
-            label1.Size = new Size(34, 20);
-            label1.TabIndex = 1;
-            label1.Text = "Üye";
-            // 
-            // Form3
+            // UyeEkrani
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label1);
-            Name = "Form3";
-            Text = "Form3";
+            Name = "UyeEkrani";
+            Text = "Üye Ekranı";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private Label label1;
     }
 }

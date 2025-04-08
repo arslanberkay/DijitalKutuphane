@@ -1,6 +1,6 @@
 ﻿namespace DijitalKütüphane.UI
 {
-    partial class Form1
+    partial class KullaniciGirisEkrani
     {
         /// <summary>
         ///  Required designer variable.
@@ -107,7 +107,7 @@
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
-            // Form1
+            // KullaniciGirisEkrani
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -116,8 +116,8 @@
             Controls.Add(grpKullaniciGirisi);
             Font = new Font("Segoe UI", 12F);
             Margin = new Padding(4);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "KullaniciGirisEkrani";
+            Text = "Kullanıcı Giriş";
             Load += Form1_Load;
             grpKullaniciGirisi.ResumeLayout(false);
             grpKullaniciGirisi.PerformLayout();
