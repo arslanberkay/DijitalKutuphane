@@ -155,5 +155,20 @@ namespace DijitalKütüphane.UI
             txtYetki.Text = seciliKullanici.Yetki;
             mtxtOlusturulmaTarihi.Text = seciliKullanici.OlusturulmaTarihi.ToString("dd-MM-yyyy HH:mm:ss");
         }
+
+        private void dgvKitaplar_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int seciliSatir = dgvKitaplar.CurrentRow.Index;
+            Kitap seciliKitap = kitaplar[seciliSatir];
+            txtKitapId.Text = seciliKitap.Id.ToString();
+            txtKitapAd.Text = seciliKitap.Isim;
+            txtKitapYazar.Text = seciliKitap.Yazar;
+            txtKitapDil.Text = seciliKitap.Dil;
+            txtKitapYayinEvi.Text = seciliKitap.YayinEvi;
+            txtKitapTur.Text = seciliKitap.Tur;
+            txtKitapAdet.Text = seciliKitap.Adet.ToString();
+            txtKitapSayfa.Text = seciliKitap.Sayfa.ToString();
+            mtxtKitapBasimYili.Text = seciliKitap.BasimYili.ToString("dd-MM-yyyy");
+        }
     }
 }

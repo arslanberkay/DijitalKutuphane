@@ -59,7 +59,6 @@
             label16 = new Label();
             txtKitapYayinEvi = new TextBox();
             label13 = new Label();
-            txtKitapBasimYili = new TextBox();
             label10 = new Label();
             txtKitapAdet = new TextBox();
             txtKitapDil = new TextBox();
@@ -74,6 +73,7 @@
             btnKitapSil = new Button();
             btnKitapGuncelle = new Button();
             btnKitapTemizle = new Button();
+            mtxtKitapBasimYili = new MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)dgvUyeler).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvKitaplar).BeginInit();
             grpUyeIslemleri.SuspendLayout();
@@ -113,6 +113,7 @@
             dgvKitaplar.RowHeadersWidth = 51;
             dgvKitaplar.Size = new Size(817, 276);
             dgvKitaplar.TabIndex = 0;
+            dgvKitaplar.CellClick += dgvKitaplar_CellClick;
             // 
             // label2
             // 
@@ -303,6 +304,7 @@
             // 
             // grpKitapIslemleri
             // 
+            grpKitapIslemleri.Controls.Add(mtxtKitapBasimYili);
             grpKitapIslemleri.Controls.Add(txtKitapAd);
             grpKitapIslemleri.Controls.Add(txtKitapId);
             grpKitapIslemleri.Controls.Add(label17);
@@ -310,7 +312,6 @@
             grpKitapIslemleri.Controls.Add(label16);
             grpKitapIslemleri.Controls.Add(txtKitapYayinEvi);
             grpKitapIslemleri.Controls.Add(label13);
-            grpKitapIslemleri.Controls.Add(txtKitapBasimYili);
             grpKitapIslemleri.Controls.Add(label10);
             grpKitapIslemleri.Controls.Add(txtKitapAdet);
             grpKitapIslemleri.Controls.Add(txtKitapDil);
@@ -384,13 +385,6 @@
             label13.Size = new Size(31, 28);
             label13.TabIndex = 2;
             label13.Text = "ID";
-            // 
-            // txtKitapBasimYili
-            // 
-            txtKitapBasimYili.Location = new Point(503, 226);
-            txtKitapBasimYili.Name = "txtKitapBasimYili";
-            txtKitapBasimYili.Size = new Size(215, 34);
-            txtKitapBasimYili.TabIndex = 3;
             // 
             // label10
             // 
@@ -512,6 +506,15 @@
             btnKitapTemizle.UseVisualStyleBackColor = true;
             btnKitapTemizle.Click += btnUyeTemizle_Click;
             // 
+            // mtxtKitapBasimYili
+            // 
+            mtxtKitapBasimYili.Location = new Point(505, 226);
+            mtxtKitapBasimYili.Mask = "00/00/0000";
+            mtxtKitapBasimYili.Name = "mtxtKitapBasimYili";
+            mtxtKitapBasimYili.Size = new Size(215, 34);
+            mtxtKitapBasimYili.TabIndex = 4;
+            mtxtKitapBasimYili.ValidatingType = typeof(DateTime);
+            // 
             // AdminEkrani
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
@@ -577,7 +580,6 @@
         private Label label17;
         private Label label16;
         private Label label13;
-        private TextBox txtKitapBasimYili;
         private Label label10;
         private TextBox txtKitapAdet;
         private TextBox txtKitapDil;
@@ -594,5 +596,6 @@
         private Button btnKitapSil;
         private Button btnKitapGuncelle;
         private Button btnKitapTemizle;
+        private MaskedTextBox mtxtKitapBasimYili;
     }
 }
