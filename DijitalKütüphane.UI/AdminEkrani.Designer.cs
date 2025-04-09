@@ -52,24 +52,24 @@
             btnUyeGuncelle = new Button();
             btnUyeTemizle = new Button();
             grpKitapIslemleri = new GroupBox();
-            txtKitapId = new TextBox();
-            label10 = new Label();
-            txtKitapSayfa = new TextBox();
-            label11 = new Label();
-            txtKitapYazar = new TextBox();
-            label12 = new Label();
-            txtKitapDil = new TextBox();
-            label13 = new Label();
-            txtKitapTur = new TextBox();
-            label14 = new Label();
-            label15 = new Label();
-            txtKitapAdet = new TextBox();
-            txtKitapBasimYili = new TextBox();
-            label16 = new Label();
-            label17 = new Label();
             txtKitapAd = new TextBox();
-            txtKitapYayinEvi = new TextBox();
+            txtKitapId = new TextBox();
+            label17 = new Label();
             label18 = new Label();
+            label16 = new Label();
+            txtKitapYayinEvi = new TextBox();
+            label13 = new Label();
+            txtKitapBasimYili = new TextBox();
+            label10 = new Label();
+            txtKitapAdet = new TextBox();
+            txtKitapDil = new TextBox();
+            label15 = new Label();
+            txtKitapSayfa = new TextBox();
+            label14 = new Label();
+            label11 = new Label();
+            txtKitapTur = new TextBox();
+            label12 = new Label();
+            txtKitapYazar = new TextBox();
             btnKitapEkle = new Button();
             btnKitapSil = new Button();
             btnKitapGuncelle = new Button();
@@ -105,6 +105,7 @@
             // 
             // dgvKitaplar
             // 
+            dgvKitaplar.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             dgvKitaplar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvKitaplar.Location = new Point(897, 63);
             dgvKitaplar.Margin = new Padding(4);
@@ -327,117 +328,19 @@
             grpKitapIslemleri.TabStop = false;
             grpKitapIslemleri.Text = "Kitap İşlemleri";
             // 
+            // txtKitapAd
+            // 
+            txtKitapAd.Location = new Point(505, 46);
+            txtKitapAd.Name = "txtKitapAd";
+            txtKitapAd.Size = new Size(215, 34);
+            txtKitapAd.TabIndex = 3;
+            // 
             // txtKitapId
             // 
             txtKitapId.Location = new Point(94, 46);
             txtKitapId.Name = "txtKitapId";
             txtKitapId.Size = new Size(237, 34);
             txtKitapId.TabIndex = 3;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new Point(24, 187);
-            label10.Name = "label10";
-            label10.Size = new Size(36, 28);
-            label10.TabIndex = 2;
-            label10.Text = "Dil";
-            // 
-            // txtKitapSayfa
-            // 
-            txtKitapSayfa.Location = new Point(94, 136);
-            txtKitapSayfa.Name = "txtKitapSayfa";
-            txtKitapSayfa.Size = new Size(237, 34);
-            txtKitapSayfa.TabIndex = 3;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new Point(24, 97);
-            label11.Name = "label11";
-            label11.Size = new Size(57, 28);
-            label11.TabIndex = 2;
-            label11.Text = "Yazar";
-            // 
-            // txtKitapYazar
-            // 
-            txtKitapYazar.Location = new Point(94, 91);
-            txtKitapYazar.Name = "txtKitapYazar";
-            txtKitapYazar.Size = new Size(237, 34);
-            txtKitapYazar.TabIndex = 3;
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Location = new Point(24, 142);
-            label12.Name = "label12";
-            label12.Size = new Size(59, 28);
-            label12.TabIndex = 2;
-            label12.Text = "Sayfa";
-            // 
-            // txtKitapDil
-            // 
-            txtKitapDil.Location = new Point(94, 181);
-            txtKitapDil.Name = "txtKitapDil";
-            txtKitapDil.Size = new Size(237, 34);
-            txtKitapDil.TabIndex = 3;
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Location = new Point(24, 52);
-            label13.Name = "label13";
-            label13.Size = new Size(31, 28);
-            label13.TabIndex = 2;
-            label13.Text = "ID";
-            // 
-            // txtKitapTur
-            // 
-            txtKitapTur.Location = new Point(505, 136);
-            txtKitapTur.Name = "txtKitapTur";
-            txtKitapTur.Size = new Size(215, 34);
-            txtKitapTur.TabIndex = 3;
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Location = new Point(403, 184);
-            label14.Name = "label14";
-            label14.Size = new Size(54, 28);
-            label14.TabIndex = 2;
-            label14.Text = "Adet";
-            // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Location = new Point(405, 139);
-            label15.Name = "label15";
-            label15.Size = new Size(40, 28);
-            label15.TabIndex = 2;
-            label15.Text = "Tür";
-            // 
-            // txtKitapAdet
-            // 
-            txtKitapAdet.Location = new Point(503, 181);
-            txtKitapAdet.Name = "txtKitapAdet";
-            txtKitapAdet.Size = new Size(215, 34);
-            txtKitapAdet.TabIndex = 3;
-            // 
-            // txtKitapBasimYili
-            // 
-            txtKitapBasimYili.Location = new Point(503, 226);
-            txtKitapBasimYili.Name = "txtKitapBasimYili";
-            txtKitapBasimYili.Size = new Size(215, 34);
-            txtKitapBasimYili.TabIndex = 3;
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Location = new Point(403, 229);
-            label16.Name = "label16";
-            label16.Size = new Size(94, 28);
-            label16.TabIndex = 2;
-            label16.Text = "Basım Yılı";
             // 
             // label17
             // 
@@ -448,20 +351,6 @@
             label17.TabIndex = 2;
             label17.Text = "Ad";
             // 
-            // txtKitapAd
-            // 
-            txtKitapAd.Location = new Point(505, 46);
-            txtKitapAd.Name = "txtKitapAd";
-            txtKitapAd.Size = new Size(215, 34);
-            txtKitapAd.TabIndex = 3;
-            // 
-            // txtKitapYayinEvi
-            // 
-            txtKitapYayinEvi.Location = new Point(503, 91);
-            txtKitapYayinEvi.Name = "txtKitapYayinEvi";
-            txtKitapYayinEvi.Size = new Size(215, 34);
-            txtKitapYayinEvi.TabIndex = 3;
-            // 
             // label18
             // 
             label18.AutoSize = true;
@@ -470,6 +359,118 @@
             label18.Size = new Size(87, 28);
             label18.TabIndex = 2;
             label18.Text = "Yayın Evi";
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(403, 229);
+            label16.Name = "label16";
+            label16.Size = new Size(94, 28);
+            label16.TabIndex = 2;
+            label16.Text = "Basım Yılı";
+            // 
+            // txtKitapYayinEvi
+            // 
+            txtKitapYayinEvi.Location = new Point(503, 91);
+            txtKitapYayinEvi.Name = "txtKitapYayinEvi";
+            txtKitapYayinEvi.Size = new Size(215, 34);
+            txtKitapYayinEvi.TabIndex = 3;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(24, 52);
+            label13.Name = "label13";
+            label13.Size = new Size(31, 28);
+            label13.TabIndex = 2;
+            label13.Text = "ID";
+            // 
+            // txtKitapBasimYili
+            // 
+            txtKitapBasimYili.Location = new Point(503, 226);
+            txtKitapBasimYili.Name = "txtKitapBasimYili";
+            txtKitapBasimYili.Size = new Size(215, 34);
+            txtKitapBasimYili.TabIndex = 3;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(24, 187);
+            label10.Name = "label10";
+            label10.Size = new Size(36, 28);
+            label10.TabIndex = 2;
+            label10.Text = "Dil";
+            // 
+            // txtKitapAdet
+            // 
+            txtKitapAdet.Location = new Point(503, 181);
+            txtKitapAdet.Name = "txtKitapAdet";
+            txtKitapAdet.Size = new Size(215, 34);
+            txtKitapAdet.TabIndex = 3;
+            // 
+            // txtKitapDil
+            // 
+            txtKitapDil.Location = new Point(94, 181);
+            txtKitapDil.Name = "txtKitapDil";
+            txtKitapDil.Size = new Size(237, 34);
+            txtKitapDil.TabIndex = 3;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(405, 139);
+            label15.Name = "label15";
+            label15.Size = new Size(40, 28);
+            label15.TabIndex = 2;
+            label15.Text = "Tür";
+            // 
+            // txtKitapSayfa
+            // 
+            txtKitapSayfa.Location = new Point(94, 136);
+            txtKitapSayfa.Name = "txtKitapSayfa";
+            txtKitapSayfa.Size = new Size(237, 34);
+            txtKitapSayfa.TabIndex = 3;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(403, 184);
+            label14.Name = "label14";
+            label14.Size = new Size(54, 28);
+            label14.TabIndex = 2;
+            label14.Text = "Adet";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(24, 97);
+            label11.Name = "label11";
+            label11.Size = new Size(57, 28);
+            label11.TabIndex = 2;
+            label11.Text = "Yazar";
+            // 
+            // txtKitapTur
+            // 
+            txtKitapTur.Location = new Point(505, 136);
+            txtKitapTur.Name = "txtKitapTur";
+            txtKitapTur.Size = new Size(215, 34);
+            txtKitapTur.TabIndex = 3;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(24, 142);
+            label12.Name = "label12";
+            label12.Size = new Size(59, 28);
+            label12.TabIndex = 2;
+            label12.Text = "Sayfa";
+            // 
+            // txtKitapYazar
+            // 
+            txtKitapYazar.Location = new Point(94, 91);
+            txtKitapYazar.Name = "txtKitapYazar";
+            txtKitapYazar.Size = new Size(237, 34);
+            txtKitapYazar.TabIndex = 3;
             // 
             // btnKitapEkle
             // 

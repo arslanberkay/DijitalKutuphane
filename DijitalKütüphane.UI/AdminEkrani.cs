@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DijitalKütüphane.UI.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,9 +20,26 @@ namespace DijitalKütüphane.UI
             kullanicilar = kullanicilarG;
         }
 
+        List<Kitap> kitaplar = new List<Kitap>
+        {
+            new Kitap{Id=1, Isim="Meg - Derinlerdeki Dehşet", Yazar="Steve Alten", YayinEvi="Panama Yayıncılık", BasimYili=new DateTime(2018,08,1), Sayfa=440, Adet=100, Dil="İngilizce", Tur="Macera"},
+            new Kitap{Id=2, Isim="Bir Yazılımcının Yol Haritası", Yazar="Murat Yücedağ", YayinEvi="Kodlab Yayıncılık", BasimYili=new DateTime(2020,05,1), Sayfa=320, Adet=50, Dil="Türkçe", Tur="Eğitim"},
+            new Kitap{Id=3, Isim="Pi", Yazar="Yann Martel", YayinEvi="Yapı Kredi Yayınları", BasimYili=new DateTime(2001,06,1), Sayfa=480,   Adet=70, Dil="Türkçe", Tur="Macera"},
+            new Kitap{Id=4, Isim="Robinson Crusoe", Yazar="Daniel Defoe", YayinEvi="İş Bankası Kültür Yayınları", BasimYili=new DateTime(1719,04,25), Sayfa=320, Adet=80, Dil="Türkçe", Tur="Macera"},
+            new Kitap{Id=5, Isim="Sefiller", Yazar="Victor Hugo", YayinEvi="İş Bankası Kültür Yayınları", BasimYili=new DateTime(1862,01,1), Sayfa=1232, Adet=30, Dil="Türkçe", Tur="Roman"}
+
+        };
+
+        private void KitapTablosunuYenile()
+        {
+            dgvKitaplar.DataSource = null;
+            dgvKitaplar.DataSource = kitaplar;
+        }
+
         private void AdminEkrani_Load(object sender, EventArgs e)
         {
             UyeTablosunuYenile();
+            KitapTablosunuYenile();
         }
 
         private void btnUyeEkle_Click(object sender, EventArgs e)
