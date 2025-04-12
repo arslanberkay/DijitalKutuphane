@@ -170,5 +170,38 @@ namespace DijitalKütüphane.UI
             txtKitapSayfa.Text = seciliKitap.Sayfa.ToString();
             mtxtKitapBasimYili.Text = seciliKitap.BasimYili.ToString("dd-MM-yyyy");
         }
+
+        private void btnUyeAra_Click(object sender, EventArgs e)
+        {
+            dgvUyeler.DataSource = null;
+            Kullanici arananKullanici = kullanicilar[Convert.ToInt32(txtUyeIdArama.Text) - 1]; //Arama butonuna girilen sayıya karşılık gelen kullanıcıyı aldım.
+
+            List<Kullanici> arananKullaniciListesi = new List<Kullanici> { arananKullanici };
+
+            dgvUyeler.DataSource = arananKullaniciListesi;
+
+        }
+
+        private void btnUyeYenile_Click(object sender, EventArgs e)
+        {
+            dgvUyeler.DataSource = null;
+            dgvUyeler.DataSource = kullanicilar;
+        }
+
+        private void btnKitapAra_Click(object sender, EventArgs e)
+        {
+            dgvKitaplar.DataSource = null;
+
+            Kitap arananKitap = kitaplar[Convert.ToInt32(txtKitapIdArama.Text) - 1];
+            List<Kitap> arananKitaplar = new List<Kitap> { arananKitap };
+
+            dgvKitaplar.DataSource = arananKitaplar;
+        }
+
+        private void btnKitapYenile_Click(object sender, EventArgs e)
+        {
+            dgvKitaplar.DataSource = null;
+            dgvKitaplar.DataSource = kitaplar;
+        }
     }
 }

@@ -79,7 +79,7 @@
             txtUyeIdArama = new TextBox();
             btnKitapAra = new Button();
             btnKitapYenile = new Button();
-            KitapIdArama = new TextBox();
+            txtKitapIdArama = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dgvUyeler).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvKitaplar).BeginInit();
             grpUyeIslemleri.SuspendLayout();
@@ -532,6 +532,7 @@
             btnUyeAra.TabIndex = 7;
             btnUyeAra.Text = "Ara";
             btnUyeAra.UseVisualStyleBackColor = true;
+            btnUyeAra.Click += btnUyeAra_Click;
             // 
             // btnUyeYenile
             // 
@@ -542,6 +543,7 @@
             btnUyeYenile.TabIndex = 7;
             btnUyeYenile.Text = "Yenile";
             btnUyeYenile.UseVisualStyleBackColor = true;
+            btnUyeYenile.Click += btnUyeYenile_Click;
             // 
             // txtUyeIdArama
             // 
@@ -560,6 +562,7 @@
             btnKitapAra.TabIndex = 7;
             btnKitapAra.Text = "Ara";
             btnKitapAra.UseVisualStyleBackColor = true;
+            btnKitapAra.Click += btnKitapAra_Click;
             // 
             // btnKitapYenile
             // 
@@ -570,21 +573,22 @@
             btnKitapYenile.TabIndex = 7;
             btnKitapYenile.Text = "Yenile";
             btnKitapYenile.UseVisualStyleBackColor = true;
+            btnKitapYenile.Click += btnKitapYenile_Click;
             // 
-            // KitapIdArama
+            // txtKitapIdArama
             // 
-            KitapIdArama.Font = new Font("Segoe UI", 10.2F);
-            KitapIdArama.Location = new Point(1046, 22);
-            KitapIdArama.Name = "KitapIdArama";
-            KitapIdArama.Size = new Size(97, 30);
-            KitapIdArama.TabIndex = 8;
+            txtKitapIdArama.Font = new Font("Segoe UI", 10.2F);
+            txtKitapIdArama.Location = new Point(1046, 22);
+            txtKitapIdArama.Name = "txtKitapIdArama";
+            txtKitapIdArama.Size = new Size(97, 30);
+            txtKitapIdArama.TabIndex = 8;
             // 
             // AdminEkrani
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1861, 717);
-            Controls.Add(KitapIdArama);
+            Controls.Add(txtKitapIdArama);
             Controls.Add(txtUyeIdArama);
             Controls.Add(btnKitapYenile);
             Controls.Add(btnUyeYenile);
@@ -672,6 +676,6 @@
         private TextBox txtUyeIdArama;
         private Button btnKitapAra;
         private Button btnKitapYenile;
-        private TextBox KitapIdArama;
+        private TextBox txtKitapIdArama;
     }
 }
