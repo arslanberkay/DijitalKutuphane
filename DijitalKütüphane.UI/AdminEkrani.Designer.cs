@@ -127,11 +127,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 13.8F);
-            label1.Location = new Point(466, 21);
+            label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold | FontStyle.Italic);
+            label1.Location = new Point(466, 15);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(79, 31);
+            label1.Size = new Size(102, 38);
             label1.TabIndex = 1;
             label1.Text = "Üyeler";
             // 
@@ -164,124 +164,137 @@
             dgvKitaplar.RowHeadersWidth = 51;
             dgvKitaplar.RowTemplate.Height = 25;
             dgvKitaplar.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvKitaplar.Size = new Size(866, 276);
+            dgvKitaplar.Size = new Size(877, 276);
             dgvKitaplar.TabIndex = 0;
             dgvKitaplar.CellClick += dgvKitaplar_CellClick;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 13.8F);
-            label2.Location = new Point(1389, 20);
+            label2.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold | FontStyle.Italic);
+            label2.Location = new Point(1389, 14);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(93, 31);
+            label2.Size = new Size(126, 38);
             label2.TabIndex = 1;
             label2.Text = "Kitaplar";
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             label3.Location = new Point(25, 43);
             label3.Name = "label3";
-            label3.Size = new Size(31, 28);
+            label3.Size = new Size(32, 25);
             label3.TabIndex = 2;
             label3.Text = "ID";
             // 
             // txtId
             // 
+            txtId.Font = new Font("Segoe UI", 11F);
             txtId.Location = new Point(158, 46);
             txtId.Name = "txtId";
-            txtId.Size = new Size(231, 34);
+            txtId.Size = new Size(231, 32);
             txtId.TabIndex = 3;
             // 
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             label4.Location = new Point(25, 87);
             label4.Name = "label4";
-            label4.Size = new Size(80, 28);
+            label4.Size = new Size(80, 25);
             label4.TabIndex = 2;
             label4.Text = "Soyisim";
             // 
             // txtSoyisim
             // 
+            txtSoyisim.Font = new Font("Segoe UI", 11F);
             txtSoyisim.Location = new Point(158, 89);
             txtSoyisim.Name = "txtSoyisim";
-            txtSoyisim.Size = new Size(231, 34);
+            txtSoyisim.Size = new Size(231, 32);
             txtSoyisim.TabIndex = 3;
             // 
             // label5
             // 
             label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             label5.Location = new Point(25, 131);
             label5.Name = "label5";
-            label5.Size = new Size(120, 28);
+            label5.Size = new Size(122, 25);
             label5.TabIndex = 2;
             label5.Text = "Kullanıcı Adı";
             // 
             // label6
             // 
             label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             label6.Location = new Point(25, 175);
             label6.Name = "label6";
-            label6.Size = new Size(53, 28);
+            label6.Size = new Size(55, 25);
             label6.TabIndex = 2;
             label6.Text = "Yetki";
             // 
             // txtKullaniciAdi
             // 
+            txtKullaniciAdi.Font = new Font("Segoe UI", 11F);
             txtKullaniciAdi.Location = new Point(158, 132);
             txtKullaniciAdi.Name = "txtKullaniciAdi";
-            txtKullaniciAdi.Size = new Size(231, 34);
+            txtKullaniciAdi.Size = new Size(231, 32);
             txtKullaniciAdi.TabIndex = 3;
             // 
             // txtYetki
             // 
+            txtYetki.Font = new Font("Segoe UI", 11F);
             txtYetki.Location = new Point(158, 175);
             txtYetki.Name = "txtYetki";
-            txtYetki.Size = new Size(231, 34);
+            txtYetki.Size = new Size(231, 32);
             txtYetki.TabIndex = 3;
             // 
             // label8
             // 
             label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             label8.Location = new Point(429, 129);
             label8.Name = "label8";
-            label8.Size = new Size(51, 28);
+            label8.Size = new Size(53, 25);
             label8.TabIndex = 2;
             label8.Text = "Şifre";
             // 
             // label9
             // 
             label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             label9.Location = new Point(429, 90);
             label9.Name = "label9";
-            label9.Size = new Size(154, 28);
+            label9.Size = new Size(158, 25);
             label9.TabIndex = 2;
             label9.Text = "Oluşturma Tarihi";
             // 
             // txtSifre
             // 
+            txtSifre.Font = new Font("Segoe UI", 11F);
             txtSifre.Location = new Point(603, 129);
             txtSifre.Name = "txtSifre";
-            txtSifre.Size = new Size(217, 34);
+            txtSifre.Size = new Size(217, 32);
             txtSifre.TabIndex = 3;
             // 
             // label7
             // 
             label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             label7.Location = new Point(429, 51);
             label7.Name = "label7";
-            label7.Size = new Size(47, 28);
+            label7.Size = new Size(48, 25);
             label7.TabIndex = 2;
             label7.Text = "İsim";
             // 
             // txtIsim
             // 
+            txtIsim.Font = new Font("Segoe UI", 11F);
             txtIsim.Location = new Point(603, 45);
             txtIsim.Name = "txtIsim";
-            txtIsim.Size = new Size(217, 34);
+            txtIsim.Size = new Size(217, 32);
             txtIsim.TabIndex = 3;
             // 
             // grpUyeIslemleri
@@ -300,6 +313,7 @@
             grpUyeIslemleri.Controls.Add(txtIsim);
             grpUyeIslemleri.Controls.Add(label6);
             grpUyeIslemleri.Controls.Add(txtId);
+            grpUyeIslemleri.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             grpUyeIslemleri.Location = new Point(37, 358);
             grpUyeIslemleri.Name = "grpUyeIslemleri";
             grpUyeIslemleri.Size = new Size(873, 226);
@@ -309,51 +323,60 @@
             // 
             // mtxtOlusturulmaTarihi
             // 
+            mtxtOlusturulmaTarihi.Font = new Font("Segoe UI", 11F);
             mtxtOlusturulmaTarihi.Location = new Point(603, 87);
             mtxtOlusturulmaTarihi.Mask = "00/00/0000 90:00";
             mtxtOlusturulmaTarihi.Name = "mtxtOlusturulmaTarihi";
-            mtxtOlusturulmaTarihi.Size = new Size(215, 34);
+            mtxtOlusturulmaTarihi.Size = new Size(215, 32);
             mtxtOlusturulmaTarihi.TabIndex = 4;
             mtxtOlusturulmaTarihi.ValidatingType = typeof(DateTime);
             // 
             // btnUyeEkle
             // 
+            btnUyeEkle.BackColor = Color.SteelBlue;
+            btnUyeEkle.ForeColor = Color.White;
             btnUyeEkle.Location = new Point(37, 590);
             btnUyeEkle.Name = "btnUyeEkle";
-            btnUyeEkle.Size = new Size(195, 39);
+            btnUyeEkle.Size = new Size(200, 42);
             btnUyeEkle.TabIndex = 5;
             btnUyeEkle.Text = "Ekle";
-            btnUyeEkle.UseVisualStyleBackColor = true;
+            btnUyeEkle.UseVisualStyleBackColor = false;
             btnUyeEkle.Click += btnUyeEkle_Click;
             // 
             // btnUyeSil
             // 
+            btnUyeSil.BackColor = Color.SteelBlue;
+            btnUyeSil.ForeColor = Color.White;
             btnUyeSil.Location = new Point(258, 590);
             btnUyeSil.Name = "btnUyeSil";
-            btnUyeSil.Size = new Size(195, 39);
+            btnUyeSil.Size = new Size(200, 42);
             btnUyeSil.TabIndex = 5;
             btnUyeSil.Text = "Sil";
-            btnUyeSil.UseVisualStyleBackColor = true;
+            btnUyeSil.UseVisualStyleBackColor = false;
             btnUyeSil.Click += btnUyeSil_Click;
             // 
             // btnUyeGuncelle
             // 
+            btnUyeGuncelle.BackColor = Color.SteelBlue;
+            btnUyeGuncelle.ForeColor = Color.White;
             btnUyeGuncelle.Location = new Point(479, 590);
             btnUyeGuncelle.Name = "btnUyeGuncelle";
-            btnUyeGuncelle.Size = new Size(211, 39);
+            btnUyeGuncelle.Size = new Size(200, 42);
             btnUyeGuncelle.TabIndex = 5;
             btnUyeGuncelle.Text = "Güncelle";
-            btnUyeGuncelle.UseVisualStyleBackColor = true;
+            btnUyeGuncelle.UseVisualStyleBackColor = false;
             btnUyeGuncelle.Click += btnUyeGuncelle_Click;
             // 
             // btnUyeTemizle
             // 
+            btnUyeTemizle.BackColor = Color.SteelBlue;
+            btnUyeTemizle.ForeColor = Color.White;
             btnUyeTemizle.Location = new Point(716, 590);
             btnUyeTemizle.Name = "btnUyeTemizle";
-            btnUyeTemizle.Size = new Size(194, 39);
+            btnUyeTemizle.Size = new Size(200, 42);
             btnUyeTemizle.TabIndex = 5;
             btnUyeTemizle.Text = "Temizle";
-            btnUyeTemizle.UseVisualStyleBackColor = true;
+            btnUyeTemizle.UseVisualStyleBackColor = false;
             btnUyeTemizle.Click += btnUyeTemizle_Click;
             // 
             // grpKitapIslemleri
@@ -376,6 +399,7 @@
             grpKitapIslemleri.Controls.Add(txtKitapTur);
             grpKitapIslemleri.Controls.Add(label12);
             grpKitapIslemleri.Controls.Add(txtKitapYazar);
+            grpKitapIslemleri.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             grpKitapIslemleri.Location = new Point(947, 358);
             grpKitapIslemleri.Name = "grpKitapIslemleri";
             grpKitapIslemleri.Size = new Size(866, 271);
@@ -385,248 +409,282 @@
             // 
             // mtxtKitapBasimYili
             // 
+            mtxtKitapBasimYili.Font = new Font("Segoe UI", 11F);
             mtxtKitapBasimYili.Location = new Point(553, 217);
             mtxtKitapBasimYili.Mask = "00/00/0000";
             mtxtKitapBasimYili.Name = "mtxtKitapBasimYili";
-            mtxtKitapBasimYili.Size = new Size(236, 34);
+            mtxtKitapBasimYili.Size = new Size(236, 32);
             mtxtKitapBasimYili.TabIndex = 4;
             mtxtKitapBasimYili.ValidatingType = typeof(DateTime);
             // 
             // txtKitapAd
             // 
+            txtKitapAd.Font = new Font("Segoe UI", 11F);
             txtKitapAd.Location = new Point(553, 37);
             txtKitapAd.Name = "txtKitapAd";
-            txtKitapAd.Size = new Size(236, 34);
+            txtKitapAd.Size = new Size(236, 32);
             txtKitapAd.TabIndex = 3;
             // 
             // txtKitapId
             // 
+            txtKitapId.Font = new Font("Segoe UI", 11F);
             txtKitapId.Location = new Point(105, 43);
             txtKitapId.Name = "txtKitapId";
-            txtKitapId.Size = new Size(266, 34);
+            txtKitapId.Size = new Size(266, 32);
             txtKitapId.TabIndex = 3;
             // 
             // label17
             // 
             label17.AutoSize = true;
+            label17.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             label17.Location = new Point(453, 40);
             label17.Name = "label17";
-            label17.Size = new Size(37, 28);
+            label17.Size = new Size(37, 25);
             label17.TabIndex = 2;
             label17.Text = "Ad";
             // 
             // label18
             // 
             label18.AutoSize = true;
+            label18.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             label18.Location = new Point(451, 85);
             label18.Name = "label18";
-            label18.Size = new Size(87, 28);
+            label18.Size = new Size(89, 25);
             label18.TabIndex = 2;
             label18.Text = "Yayın Evi";
             // 
             // label16
             // 
             label16.AutoSize = true;
+            label16.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             label16.Location = new Point(451, 220);
             label16.Name = "label16";
-            label16.Size = new Size(94, 28);
+            label16.Size = new Size(96, 25);
             label16.TabIndex = 2;
             label16.Text = "Basım Yılı";
             // 
             // txtKitapYayinEvi
             // 
+            txtKitapYayinEvi.Font = new Font("Segoe UI", 11F);
             txtKitapYayinEvi.Location = new Point(551, 82);
             txtKitapYayinEvi.Name = "txtKitapYayinEvi";
-            txtKitapYayinEvi.Size = new Size(236, 34);
+            txtKitapYayinEvi.Size = new Size(236, 32);
             txtKitapYayinEvi.TabIndex = 3;
             // 
             // label13
             // 
             label13.AutoSize = true;
+            label13.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             label13.Location = new Point(35, 49);
             label13.Name = "label13";
-            label13.Size = new Size(31, 28);
+            label13.Size = new Size(32, 25);
             label13.TabIndex = 2;
             label13.Text = "ID";
             // 
             // label10
             // 
             label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             label10.Location = new Point(35, 184);
             label10.Name = "label10";
-            label10.Size = new Size(36, 28);
+            label10.Size = new Size(36, 25);
             label10.TabIndex = 2;
             label10.Text = "Dil";
             // 
             // txtKitapAdet
             // 
+            txtKitapAdet.Font = new Font("Segoe UI", 11F);
             txtKitapAdet.Location = new Point(551, 172);
             txtKitapAdet.Name = "txtKitapAdet";
-            txtKitapAdet.Size = new Size(236, 34);
+            txtKitapAdet.Size = new Size(236, 32);
             txtKitapAdet.TabIndex = 3;
             // 
             // txtKitapDil
             // 
+            txtKitapDil.Font = new Font("Segoe UI", 11F);
             txtKitapDil.Location = new Point(105, 178);
             txtKitapDil.Name = "txtKitapDil";
-            txtKitapDil.Size = new Size(266, 34);
+            txtKitapDil.Size = new Size(266, 32);
             txtKitapDil.TabIndex = 3;
             // 
             // label15
             // 
             label15.AutoSize = true;
+            label15.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             label15.Location = new Point(453, 130);
             label15.Name = "label15";
-            label15.Size = new Size(40, 28);
+            label15.Size = new Size(42, 25);
             label15.TabIndex = 2;
             label15.Text = "Tür";
             // 
             // txtKitapSayfa
             // 
+            txtKitapSayfa.Font = new Font("Segoe UI", 11F);
             txtKitapSayfa.Location = new Point(105, 133);
             txtKitapSayfa.Name = "txtKitapSayfa";
-            txtKitapSayfa.Size = new Size(266, 34);
+            txtKitapSayfa.Size = new Size(266, 32);
             txtKitapSayfa.TabIndex = 3;
             // 
             // label14
             // 
             label14.AutoSize = true;
+            label14.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             label14.Location = new Point(451, 175);
             label14.Name = "label14";
-            label14.Size = new Size(54, 28);
+            label14.Size = new Size(54, 25);
             label14.TabIndex = 2;
             label14.Text = "Adet";
             // 
             // label11
             // 
             label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             label11.Location = new Point(35, 94);
             label11.Name = "label11";
-            label11.Size = new Size(57, 28);
+            label11.Size = new Size(59, 25);
             label11.TabIndex = 2;
             label11.Text = "Yazar";
             // 
             // txtKitapTur
             // 
+            txtKitapTur.Font = new Font("Segoe UI", 11F);
             txtKitapTur.Location = new Point(553, 127);
             txtKitapTur.Name = "txtKitapTur";
-            txtKitapTur.Size = new Size(236, 34);
+            txtKitapTur.Size = new Size(236, 32);
             txtKitapTur.TabIndex = 3;
             // 
             // label12
             // 
             label12.AutoSize = true;
+            label12.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             label12.Location = new Point(35, 139);
             label12.Name = "label12";
-            label12.Size = new Size(59, 28);
+            label12.Size = new Size(60, 25);
             label12.TabIndex = 2;
             label12.Text = "Sayfa";
             // 
             // txtKitapYazar
             // 
+            txtKitapYazar.Font = new Font("Segoe UI", 11F);
             txtKitapYazar.Location = new Point(105, 88);
             txtKitapYazar.Name = "txtKitapYazar";
-            txtKitapYazar.Size = new Size(266, 34);
+            txtKitapYazar.Size = new Size(266, 32);
             txtKitapYazar.TabIndex = 3;
             // 
             // btnKitapEkle
             // 
+            btnKitapEkle.BackColor = Color.SteelBlue;
+            btnKitapEkle.ForeColor = Color.White;
             btnKitapEkle.Location = new Point(945, 644);
             btnKitapEkle.Name = "btnKitapEkle";
-            btnKitapEkle.Size = new Size(199, 39);
+            btnKitapEkle.Size = new Size(200, 42);
             btnKitapEkle.TabIndex = 5;
             btnKitapEkle.Text = "Ekle";
-            btnKitapEkle.UseVisualStyleBackColor = true;
+            btnKitapEkle.UseVisualStyleBackColor = false;
             btnKitapEkle.Click += btnUyeEkle_Click;
             // 
             // btnKitapSil
             // 
+            btnKitapSil.BackColor = Color.SteelBlue;
+            btnKitapSil.ForeColor = Color.White;
             btnKitapSil.Location = new Point(1171, 644);
             btnKitapSil.Name = "btnKitapSil";
-            btnKitapSil.Size = new Size(191, 39);
+            btnKitapSil.Size = new Size(200, 42);
             btnKitapSil.TabIndex = 5;
             btnKitapSil.Text = "Sil";
-            btnKitapSil.UseVisualStyleBackColor = true;
+            btnKitapSil.UseVisualStyleBackColor = false;
             btnKitapSil.Click += btnUyeSil_Click;
             // 
             // btnKitapGuncelle
             // 
+            btnKitapGuncelle.BackColor = Color.SteelBlue;
+            btnKitapGuncelle.ForeColor = Color.White;
             btnKitapGuncelle.Location = new Point(1389, 644);
             btnKitapGuncelle.Name = "btnKitapGuncelle";
-            btnKitapGuncelle.Size = new Size(204, 39);
+            btnKitapGuncelle.Size = new Size(200, 42);
             btnKitapGuncelle.TabIndex = 5;
             btnKitapGuncelle.Text = "Güncelle";
-            btnKitapGuncelle.UseVisualStyleBackColor = true;
+            btnKitapGuncelle.UseVisualStyleBackColor = false;
             btnKitapGuncelle.Click += btnUyeGuncelle_Click;
             // 
             // btnKitapTemizle
             // 
+            btnKitapTemizle.BackColor = Color.SteelBlue;
+            btnKitapTemizle.ForeColor = Color.White;
             btnKitapTemizle.Location = new Point(1620, 644);
             btnKitapTemizle.Name = "btnKitapTemizle";
-            btnKitapTemizle.Size = new Size(189, 39);
+            btnKitapTemizle.Size = new Size(200, 42);
             btnKitapTemizle.TabIndex = 5;
             btnKitapTemizle.Text = "Temizle";
-            btnKitapTemizle.UseVisualStyleBackColor = true;
+            btnKitapTemizle.UseVisualStyleBackColor = false;
             btnKitapTemizle.Click += btnUyeTemizle_Click;
             // 
             // btnUyeAra
             // 
+            btnUyeAra.BackColor = Color.SteelBlue;
             btnUyeAra.Font = new Font("Segoe UI", 10.2F);
+            btnUyeAra.ForeColor = Color.White;
             btnUyeAra.Location = new Point(37, 22);
             btnUyeAra.Name = "btnUyeAra";
-            btnUyeAra.Size = new Size(67, 34);
+            btnUyeAra.Size = new Size(70, 35);
             btnUyeAra.TabIndex = 7;
             btnUyeAra.Text = "Ara";
-            btnUyeAra.UseVisualStyleBackColor = true;
+            btnUyeAra.UseVisualStyleBackColor = false;
             btnUyeAra.Click += btnUyeAra_Click;
             // 
             // btnUyeYenile
             // 
+            btnUyeYenile.BackColor = Color.SteelBlue;
             btnUyeYenile.Font = new Font("Segoe UI", 10.2F);
-            btnUyeYenile.Location = new Point(213, 21);
+            btnUyeYenile.ForeColor = Color.White;
+            btnUyeYenile.Location = new Point(218, 22);
             btnUyeYenile.Name = "btnUyeYenile";
-            btnUyeYenile.Size = new Size(90, 34);
+            btnUyeYenile.Size = new Size(100, 35);
             btnUyeYenile.TabIndex = 7;
             btnUyeYenile.Text = "Yenile";
-            btnUyeYenile.UseVisualStyleBackColor = true;
+            btnUyeYenile.UseVisualStyleBackColor = false;
             btnUyeYenile.Click += btnUyeYenile_Click;
             // 
             // txtUyeIdArama
             // 
             txtUyeIdArama.Font = new Font("Segoe UI", 10.2F);
-            txtUyeIdArama.Location = new Point(110, 22);
+            txtUyeIdArama.Location = new Point(110, 24);
             txtUyeIdArama.Name = "txtUyeIdArama";
-            txtUyeIdArama.Size = new Size(97, 30);
+            txtUyeIdArama.Size = new Size(102, 30);
             txtUyeIdArama.TabIndex = 8;
             // 
             // btnKitapAra
             // 
+            btnKitapAra.BackColor = Color.SteelBlue;
             btnKitapAra.Font = new Font("Segoe UI", 10.2F);
+            btnKitapAra.ForeColor = Color.White;
             btnKitapAra.Location = new Point(947, 22);
             btnKitapAra.Name = "btnKitapAra";
-            btnKitapAra.Size = new Size(67, 34);
+            btnKitapAra.Size = new Size(70, 35);
             btnKitapAra.TabIndex = 7;
             btnKitapAra.Text = "Ara";
-            btnKitapAra.UseVisualStyleBackColor = true;
+            btnKitapAra.UseVisualStyleBackColor = false;
             btnKitapAra.Click += btnKitapAra_Click;
             // 
             // btnKitapYenile
             // 
+            btnKitapYenile.BackColor = Color.SteelBlue;
             btnKitapYenile.Font = new Font("Segoe UI", 10.2F);
-            btnKitapYenile.Location = new Point(1123, 21);
+            btnKitapYenile.ForeColor = Color.White;
+            btnKitapYenile.Location = new Point(1128, 22);
             btnKitapYenile.Name = "btnKitapYenile";
-            btnKitapYenile.Size = new Size(90, 34);
+            btnKitapYenile.Size = new Size(100, 35);
             btnKitapYenile.TabIndex = 7;
             btnKitapYenile.Text = "Yenile";
-            btnKitapYenile.UseVisualStyleBackColor = true;
+            btnKitapYenile.UseVisualStyleBackColor = false;
             btnKitapYenile.Click += btnKitapYenile_Click;
             // 
             // txtKitapIdArama
             // 
             txtKitapIdArama.Font = new Font("Segoe UI", 10.2F);
-            txtKitapIdArama.Location = new Point(1020, 22);
+            txtKitapIdArama.Location = new Point(1020, 25);
             txtKitapIdArama.Name = "txtKitapIdArama";
-            txtKitapIdArama.Size = new Size(97, 30);
+            txtKitapIdArama.Size = new Size(102, 30);
             txtKitapIdArama.TabIndex = 8;
             // 
             // AdminEkrani
