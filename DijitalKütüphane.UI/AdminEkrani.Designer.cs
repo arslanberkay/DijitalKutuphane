@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             dgvUyeler = new DataGridView();
             label1 = new Label();
             dgvKitaplar = new DataGridView();
@@ -89,13 +93,34 @@
             // dgvUyeler
             // 
             dgvUyeler.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dgvUyeler.BackgroundColor = Color.White;
+            dgvUyeler.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(70, 130, 180);
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgvUyeler.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgvUyeler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.WhiteSmoke;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 11F);
+            dataGridViewCellStyle2.ForeColor = Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = Color.Gray;
+            dataGridViewCellStyle2.SelectionForeColor = Color.White;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dgvUyeler.DefaultCellStyle = dataGridViewCellStyle2;
+            dgvUyeler.EnableHeadersVisualStyles = false;
+            dgvUyeler.GridColor = Color.LightGray;
             dgvUyeler.Location = new Point(37, 63);
             dgvUyeler.Margin = new Padding(4);
             dgvUyeler.Name = "dgvUyeler";
             dgvUyeler.RowHeadersWidth = 51;
+            dgvUyeler.RowTemplate.Height = 25;
             dgvUyeler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvUyeler.Size = new Size(888, 276);
+            dgvUyeler.Size = new Size(873, 276);
             dgvUyeler.TabIndex = 0;
             dgvUyeler.CellClick += dgvUyeler_CellClick;
             // 
@@ -113,11 +138,32 @@
             // dgvKitaplar
             // 
             dgvKitaplar.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dgvKitaplar.BackgroundColor = Color.White;
+            dgvKitaplar.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(70, 130, 180);
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dgvKitaplar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             dgvKitaplar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvKitaplar.Location = new Point(969, 63);
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = Color.WhiteSmoke;
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 11F);
+            dataGridViewCellStyle4.ForeColor = Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = Color.Gray;
+            dataGridViewCellStyle4.SelectionForeColor = Color.White;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.False;
+            dgvKitaplar.DefaultCellStyle = dataGridViewCellStyle4;
+            dgvKitaplar.EnableHeadersVisualStyles = false;
+            dgvKitaplar.Location = new Point(943, 63);
             dgvKitaplar.Margin = new Padding(4);
             dgvKitaplar.Name = "dgvKitaplar";
             dgvKitaplar.RowHeadersWidth = 51;
+            dgvKitaplar.RowTemplate.Height = 25;
+            dgvKitaplar.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvKitaplar.Size = new Size(866, 276);
             dgvKitaplar.TabIndex = 0;
             dgvKitaplar.CellClick += dgvKitaplar_CellClick;
@@ -126,7 +172,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13.8F);
-            label2.Location = new Point(1413, 19);
+            label2.Location = new Point(1389, 20);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(93, 31);
@@ -256,7 +302,7 @@
             grpUyeIslemleri.Controls.Add(txtId);
             grpUyeIslemleri.Location = new Point(37, 358);
             grpUyeIslemleri.Name = "grpUyeIslemleri";
-            grpUyeIslemleri.Size = new Size(888, 226);
+            grpUyeIslemleri.Size = new Size(873, 226);
             grpUyeIslemleri.TabIndex = 4;
             grpUyeIslemleri.TabStop = false;
             grpUyeIslemleri.Text = "Üye İşlemleri";
@@ -304,7 +350,7 @@
             // 
             btnUyeTemizle.Location = new Point(716, 590);
             btnUyeTemizle.Name = "btnUyeTemizle";
-            btnUyeTemizle.Size = new Size(208, 39);
+            btnUyeTemizle.Size = new Size(194, 39);
             btnUyeTemizle.TabIndex = 5;
             btnUyeTemizle.Text = "Temizle";
             btnUyeTemizle.UseVisualStyleBackColor = true;
@@ -330,7 +376,7 @@
             grpKitapIslemleri.Controls.Add(txtKitapTur);
             grpKitapIslemleri.Controls.Add(label12);
             grpKitapIslemleri.Controls.Add(txtKitapYazar);
-            grpKitapIslemleri.Location = new Point(969, 358);
+            grpKitapIslemleri.Location = new Point(947, 358);
             grpKitapIslemleri.Name = "grpKitapIslemleri";
             grpKitapIslemleri.Size = new Size(866, 271);
             grpKitapIslemleri.TabIndex = 6;
@@ -485,7 +531,7 @@
             // 
             // btnKitapEkle
             // 
-            btnKitapEkle.Location = new Point(969, 644);
+            btnKitapEkle.Location = new Point(945, 644);
             btnKitapEkle.Name = "btnKitapEkle";
             btnKitapEkle.Size = new Size(199, 39);
             btnKitapEkle.TabIndex = 5;
@@ -495,7 +541,7 @@
             // 
             // btnKitapSil
             // 
-            btnKitapSil.Location = new Point(1195, 644);
+            btnKitapSil.Location = new Point(1171, 644);
             btnKitapSil.Name = "btnKitapSil";
             btnKitapSil.Size = new Size(191, 39);
             btnKitapSil.TabIndex = 5;
@@ -505,7 +551,7 @@
             // 
             // btnKitapGuncelle
             // 
-            btnKitapGuncelle.Location = new Point(1413, 644);
+            btnKitapGuncelle.Location = new Point(1389, 644);
             btnKitapGuncelle.Name = "btnKitapGuncelle";
             btnKitapGuncelle.Size = new Size(204, 39);
             btnKitapGuncelle.TabIndex = 5;
@@ -515,7 +561,7 @@
             // 
             // btnKitapTemizle
             // 
-            btnKitapTemizle.Location = new Point(1644, 644);
+            btnKitapTemizle.Location = new Point(1620, 644);
             btnKitapTemizle.Name = "btnKitapTemizle";
             btnKitapTemizle.Size = new Size(189, 39);
             btnKitapTemizle.TabIndex = 5;
@@ -556,7 +602,7 @@
             // btnKitapAra
             // 
             btnKitapAra.Font = new Font("Segoe UI", 10.2F);
-            btnKitapAra.Location = new Point(973, 22);
+            btnKitapAra.Location = new Point(947, 22);
             btnKitapAra.Name = "btnKitapAra";
             btnKitapAra.Size = new Size(67, 34);
             btnKitapAra.TabIndex = 7;
@@ -567,7 +613,7 @@
             // btnKitapYenile
             // 
             btnKitapYenile.Font = new Font("Segoe UI", 10.2F);
-            btnKitapYenile.Location = new Point(1149, 21);
+            btnKitapYenile.Location = new Point(1123, 21);
             btnKitapYenile.Name = "btnKitapYenile";
             btnKitapYenile.Size = new Size(90, 34);
             btnKitapYenile.TabIndex = 7;
@@ -578,7 +624,7 @@
             // txtKitapIdArama
             // 
             txtKitapIdArama.Font = new Font("Segoe UI", 10.2F);
-            txtKitapIdArama.Location = new Point(1046, 22);
+            txtKitapIdArama.Location = new Point(1020, 22);
             txtKitapIdArama.Name = "txtKitapIdArama";
             txtKitapIdArama.Size = new Size(97, 30);
             txtKitapIdArama.TabIndex = 8;
@@ -587,6 +633,7 @@
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LightGray;
             ClientSize = new Size(1861, 717);
             Controls.Add(txtKitapIdArama);
             Controls.Add(txtUyeIdArama);
