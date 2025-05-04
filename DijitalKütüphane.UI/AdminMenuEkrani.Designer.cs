@@ -94,7 +94,7 @@
             btnYazarIslemleri.TabIndex = 3;
             btnYazarIslemleri.Text = "Yazar İşlemleri";
             btnYazarIslemleri.UseVisualStyleBackColor = true;
-            btnYazarIslemleri.Click += btnYayineviIslemleri_Click;
+            btnYazarIslemleri.Click += btnYazarIslemleri_Click;
             // 
             // AdminMenuEkrani
             // 

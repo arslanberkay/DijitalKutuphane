@@ -45,5 +45,12 @@ namespace DijitalKütüphane.UI
         {
 
         }
+
+        private void btnYazarIslemleri_Click(object sender, EventArgs e)
+        {
+            YazarIslemEkrani yazarIslemEkrani = new YazarIslemEkrani();
+            yazarIslemEkrani.Show();
+            this.Hide();
+        }
     }
 }
