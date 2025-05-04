@@ -31,7 +31,9 @@ namespace DijitalKütüphane.UI
 
         private void btnYayineviIslemleri_Click(object sender, EventArgs e)
         {
-
+            YayineviIslemEkrani yayineviIslemEkrani = new YayineviIslemEkrani();
+            yayineviIslemEkrani.Show();
+            this.Hide();
         }
 
         private void btnUyeIslemleri_Click(object sender, EventArgs e)

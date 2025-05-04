@@ -33,11 +33,12 @@
             btnYayineviIslemleri = new Button();
             btnKitapIslemleri = new Button();
             btnKategoriIslemleri = new Button();
+            btnYazarIslemleri = new Button();
             SuspendLayout();
             // 
             // btnUyeGorunumu
             // 
-            btnUyeGorunumu.Location = new Point(373, 390);
+            btnUyeGorunumu.Location = new Point(373, 438);
             btnUyeGorunumu.Name = "btnUyeGorunumu";
             btnUyeGorunumu.Size = new Size(193, 70);
             btnUyeGorunumu.TabIndex = 1;
@@ -47,7 +48,7 @@
             // 
             // btnUyeIslemleri
             // 
-            btnUyeIslemleri.Location = new Point(373, 314);
+            btnUyeIslemleri.Location = new Point(373, 362);
             btnUyeIslemleri.Name = "btnUyeIslemleri";
             btnUyeIslemleri.Size = new Size(193, 70);
             btnUyeIslemleri.TabIndex = 2;
@@ -57,7 +58,7 @@
             // 
             // btnYayineviIslemleri
             // 
-            btnYayineviIslemleri.Location = new Point(373, 238);
+            btnYayineviIslemleri.Location = new Point(373, 286);
             btnYayineviIslemleri.Name = "btnYayineviIslemleri";
             btnYayineviIslemleri.Size = new Size(193, 70);
             btnYayineviIslemleri.TabIndex = 3;
@@ -67,7 +68,7 @@
             // 
             // btnKitapIslemleri
             // 
-            btnKitapIslemleri.Location = new Point(373, 162);
+            btnKitapIslemleri.Location = new Point(373, 127);
             btnKitapIslemleri.Name = "btnKitapIslemleri";
             btnKitapIslemleri.Size = new Size(193, 70);
             btnKitapIslemleri.TabIndex = 4;
@@ -77,13 +78,23 @@
             // 
             // btnKategoriIslemleri
             // 
-            btnKategoriIslemleri.Location = new Point(373, 86);
+            btnKategoriIslemleri.Location = new Point(373, 51);
             btnKategoriIslemleri.Name = "btnKategoriIslemleri";
             btnKategoriIslemleri.Size = new Size(193, 70);
             btnKategoriIslemleri.TabIndex = 5;
             btnKategoriIslemleri.Text = "Kategori İşlemleri";
             btnKategoriIslemleri.UseVisualStyleBackColor = true;
             btnKategoriIslemleri.Click += btnKategoriIslemleri_Click;
+            // 
+            // btnYazarIslemleri
+            // 
+            btnYazarIslemleri.Location = new Point(373, 203);
+            btnYazarIslemleri.Name = "btnYazarIslemleri";
+            btnYazarIslemleri.Size = new Size(193, 70);
+            btnYazarIslemleri.TabIndex = 3;
+            btnYazarIslemleri.Text = "Yazar İşlemleri";
+            btnYazarIslemleri.UseVisualStyleBackColor = true;
+            btnYazarIslemleri.Click += btnYayineviIslemleri_Click;
             // 
             // AdminMenuEkrani
             // 
@@ -92,11 +103,12 @@
             ClientSize = new Size(937, 564);
             Controls.Add(btnUyeGorunumu);
             Controls.Add(btnUyeIslemleri);
+            Controls.Add(btnYazarIslemleri);
             Controls.Add(btnYayineviIslemleri);
             Controls.Add(btnKitapIslemleri);
             Controls.Add(btnKategoriIslemleri);
             Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "AdminMenuEkrani";
             Text = "AdminMenuEkrani";
             ResumeLayout(false);
@@ -109,5 +121,6 @@
         private Button btnYayineviIslemleri;
         private Button btnKitapIslemleri;
         private Button btnKategoriIslemleri;
+        private Button btnYazarIslemleri;
     }
 }

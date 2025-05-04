@@ -100,7 +100,7 @@ namespace DijitalKütüphane.UI
         {
             if (dgvKategoriler.SelectedRows.Count == 0)
             {
-                MessageBox.Show("Lütfen silmek istediğiniz kategoriyi seçiniz!");
+                MessageBox.Show("Lütfen güncellemek istediğiniz kategoriyi seçiniz!");
                 return;
             }
             if (!ValidateInputs())
