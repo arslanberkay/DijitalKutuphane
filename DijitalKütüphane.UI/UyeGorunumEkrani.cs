@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DijitalKütüphane.UI
 {
-    public partial class Form1 : Form
+    public partial class UyeGorunumEkrani : Form
     {
-        public Form1()
+        public UyeGorunumEkrani()
         {
             InitializeComponent();
         }
