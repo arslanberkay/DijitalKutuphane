@@ -39,6 +39,7 @@ namespace DijitalKütüphane.UI
             {
                 if ((control is TextBox txt && string.IsNullOrWhiteSpace(txt.Text)) || control is MaskedTextBox mtxt && string.IsNullOrWhiteSpace(mtxt.Text) || control is DateTimePicker dtp && dtp.Value > DateTime.Now)
                 {
+                    
                     MessageBox.Show("Üye bilgileri eksiksiz doldurulmalıdır!");
                     return false;
                 }
@@ -69,6 +70,27 @@ namespace DijitalKütüphane.UI
 
             MessageBox.Show("Üye başarıyla kaydedildi");
             UyeListele();
+            UyeBilgileriTemizle();
+        }
+
+        private void UyeBilgileriTemizle()
+        {
+            foreach (var control in grpUyeIslemleri.Controls)
+            {
+                if (control is TextBox txt)
+                {
+                    txt.Text = string.Empty;
+
+                }
+                else if (control is MaskedTextBox mtxt)
+                {
+                    mtxt.Text = string.Empty;
+                }
+                else if (control is DateTimePicker dtp)
+                {
+                    dtp.Value = DateTime.Now;
+                }
+            }
         }
 
         private void dgvUyeler_CellClick(object sender, DataGridViewCellEventArgs e)

@@ -21,7 +21,7 @@ namespace DijitalKütüphane.UI.Data
         public DateTime UyelikTarihi => DateTime.Now; //Otomatik olarak kayıt olduğu tarih atansın
         public int UyelikSuresi { get; set; }
         public DateTime UyelikBitisTarihi => UyelikTarihi.AddMonths(UyelikSuresi); //Üyelik süresini 3 6 9 12 aylık seçsin. Üyelik bitişi otomatik atasın
-        public string Fotograf { get; set; }
+        public string? Fotograf { get; set; }
 
     }
 }
