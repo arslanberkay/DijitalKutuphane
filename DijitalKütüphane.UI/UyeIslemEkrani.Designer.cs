@@ -29,11 +29,13 @@
         private void InitializeComponent()
         {
             grpUyeIslemleri = new GroupBox();
+            btnFotografSec = new Button();
             dtpDogumTarihi = new DateTimePicker();
             mtxtTelefon = new MaskedTextBox();
             chkSifreGoster = new CheckBox();
             txtFotograf = new TextBox();
             txtSehir = new TextBox();
+            txtEmail = new TextBox();
             txtUlke = new TextBox();
             txtSifre = new TextBox();
             txtKullaniciAdi = new TextBox();
@@ -43,6 +45,7 @@
             label5 = new Label();
             label8 = new Label();
             label4 = new Label();
+            label10 = new Label();
             label7 = new Label();
             label3 = new Label();
             label6 = new Label();
@@ -53,14 +56,15 @@
             btnGuncelle = new Button();
             btnSil = new Button();
             btnEkle = new Button();
-            label10 = new Label();
-            txtEmail = new TextBox();
+            pbFotograf = new PictureBox();
             grpUyeIslemleri.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvUyeler).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbFotograf).BeginInit();
             SuspendLayout();
             // 
             // grpUyeIslemleri
             // 
+            grpUyeIslemleri.Controls.Add(btnFotografSec);
             grpUyeIslemleri.Controls.Add(dtpDogumTarihi);
             grpUyeIslemleri.Controls.Add(mtxtTelefon);
             grpUyeIslemleri.Controls.Add(chkSifreGoster);
@@ -88,6 +92,16 @@
             grpUyeIslemleri.TabIndex = 0;
             grpUyeIslemleri.TabStop = false;
             grpUyeIslemleri.Text = "Üye İşlemleri";
+            // 
+            // btnFotografSec
+            // 
+            btnFotografSec.Location = new Point(344, 413);
+            btnFotografSec.Name = "btnFotografSec";
+            btnFotografSec.Size = new Size(54, 34);
+            btnFotografSec.TabIndex = 5;
+            btnFotografSec.Text = "Seç";
+            btnFotografSec.UseVisualStyleBackColor = true;
+            btnFotografSec.Click += btnFotografSec_Click;
             // 
             // dtpDogumTarihi
             // 
@@ -118,6 +132,7 @@
             // 
             txtFotograf.Location = new Point(156, 416);
             txtFotograf.Name = "txtFotograf";
+            txtFotograf.ReadOnly = true;
             txtFotograf.Size = new Size(182, 31);
             txtFotograf.TabIndex = 1;
             // 
@@ -127,6 +142,13 @@
             txtSehir.Name = "txtSehir";
             txtSehir.Size = new Size(182, 31);
             txtSehir.TabIndex = 1;
+            // 
+            // txtEmail
+            // 
+            txtEmail.Location = new Point(156, 290);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(182, 31);
+            txtEmail.TabIndex = 1;
             // 
             // txtUlke
             // 
@@ -199,6 +221,15 @@
             label4.TabIndex = 0;
             label4.Text = "Şifre";
             // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(26, 293);
+            label10.Name = "label10";
+            label10.Size = new Size(56, 25);
+            label10.TabIndex = 0;
+            label10.Text = "Email";
+            // 
             // label7
             // 
             label7.AutoSize = true;
@@ -246,10 +277,12 @@
             // 
             // dgvUyeler
             // 
+            dgvUyeler.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvUyeler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvUyeler.Location = new Point(31, 513);
             dgvUyeler.Name = "dgvUyeler";
             dgvUyeler.RowHeadersWidth = 51;
+            dgvUyeler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvUyeler.Size = new Size(1416, 288);
             dgvUyeler.TabIndex = 2;
             dgvUyeler.CellClick += dgvUyeler_CellClick;
@@ -294,27 +327,21 @@
             btnEkle.UseVisualStyleBackColor = true;
             btnEkle.Click += btnEkle_Click;
             // 
-            // label10
+            // pbFotograf
             // 
-            label10.AutoSize = true;
-            label10.Location = new Point(26, 293);
-            label10.Name = "label10";
-            label10.Size = new Size(56, 25);
-            label10.TabIndex = 0;
-            label10.Text = "Email";
-            // 
-            // txtEmail
-            // 
-            txtEmail.Location = new Point(156, 290);
-            txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(182, 31);
-            txtEmail.TabIndex = 1;
+            pbFotograf.Location = new Point(617, 40);
+            pbFotograf.Name = "pbFotograf";
+            pbFotograf.Size = new Size(277, 222);
+            pbFotograf.SizeMode = PictureBoxSizeMode.Zoom;
+            pbFotograf.TabIndex = 7;
+            pbFotograf.TabStop = false;
             // 
             // UyeIslemEkrani
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1477, 813);
+            Controls.Add(pbFotograf);
             Controls.Add(btnTemizle);
             Controls.Add(btnGuncelle);
             Controls.Add(btnSil);
@@ -329,6 +356,7 @@
             grpUyeIslemleri.ResumeLayout(false);
             grpUyeIslemleri.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvUyeler).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbFotograf).EndInit();
             ResumeLayout(false);
         }
 
@@ -338,7 +366,6 @@
         private DateTimePicker dtpDogumTarihi;
         private MaskedTextBox mtxtTelefon;
         private CheckBox chkSifreGoster;
-        private TextBox txtFotograf;
         private TextBox txtSehir;
         private TextBox txtUlke;
         private TextBox txtSifre;
@@ -361,5 +388,8 @@
         private Button btnEkle;
         private TextBox txtEmail;
         private Label label10;
+        private Button btnFotografSec;
+        private TextBox txtFotograf;
+        private PictureBox pbFotograf;
     }
 }
