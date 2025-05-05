@@ -38,6 +38,7 @@
             btnSil = new Button();
             btnGuncelle = new Button();
             btnTemizle = new Button();
+            btnGeri = new Button();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvKategoriler).BeginInit();
             SuspendLayout();
@@ -67,7 +68,7 @@
             txtAd.Location = new Point(119, 41);
             txtAd.Name = "txtAd";
             txtAd.Size = new Size(179, 31);
-            txtAd.TabIndex = 1;
+            txtAd.TabIndex = 0;
             // 
             // label2
             // 
@@ -104,7 +105,7 @@
             btnEkle.Location = new Point(70, 188);
             btnEkle.Name = "btnEkle";
             btnEkle.Size = new Size(130, 45);
-            btnEkle.TabIndex = 2;
+            btnEkle.TabIndex = 1;
             btnEkle.Text = "Ekle";
             btnEkle.UseVisualStyleBackColor = true;
             btnEkle.Click += btnEkle_Click;
@@ -124,7 +125,7 @@
             btnGuncelle.Location = new Point(342, 188);
             btnGuncelle.Name = "btnGuncelle";
             btnGuncelle.Size = new Size(130, 45);
-            btnGuncelle.TabIndex = 2;
+            btnGuncelle.TabIndex = 3;
             btnGuncelle.Text = "Güncelle";
             btnGuncelle.UseVisualStyleBackColor = true;
             btnGuncelle.Click += btnGuncelle_Click;
@@ -134,16 +135,27 @@
             btnTemizle.Location = new Point(478, 188);
             btnTemizle.Name = "btnTemizle";
             btnTemizle.Size = new Size(118, 45);
-            btnTemizle.TabIndex = 2;
+            btnTemizle.TabIndex = 4;
             btnTemizle.Text = "Temizle";
             btnTemizle.UseVisualStyleBackColor = true;
             btnTemizle.Click += btnTemizle_Click;
+            // 
+            // btnGeri
+            // 
+            btnGeri.Location = new Point(1, -2);
+            btnGeri.Name = "btnGeri";
+            btnGeri.Size = new Size(64, 36);
+            btnGeri.TabIndex = 6;
+            btnGeri.Text = "Geri";
+            btnGeri.UseVisualStyleBackColor = true;
+            btnGeri.Click += btnGeri_Click;
             // 
             // KategoriIslemEkrani
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1271, 710);
+            Controls.Add(btnGeri);
             Controls.Add(btnTemizle);
             Controls.Add(btnGuncelle);
             Controls.Add(btnSil);
@@ -173,5 +185,6 @@
         private Button btnSil;
         private Button btnGuncelle;
         private Button btnTemizle;
+        private Button btnGeri;
     }
 }

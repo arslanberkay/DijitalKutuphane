@@ -97,9 +97,9 @@ namespace DijitalKütüphane.UI
                 return;
             }
 
-            secilenYazar.Ad= txtAd.Text;
-            secilenYazar.Soyad= txtSoyad.Text;
-            secilenYazar.Email= txtEmail.Text;
+            secilenYazar.Ad = txtAd.Text;
+            secilenYazar.Soyad = txtSoyad.Text;
+            secilenYazar.Email = txtEmail.Text;
 
 
             _db.SaveChanges();
@@ -128,6 +128,11 @@ namespace DijitalKütüphane.UI
             dgvYazarlar.ClearSelection();
         }
 
-
+        private void btnGeri_Click(object sender, EventArgs e)
+        {
+            AdminMenuEkrani adminMenuEkrani = new AdminMenuEkrani();
+            adminMenuEkrani.ShowDialog();
+            this.Hide();
+        }
     }
 }

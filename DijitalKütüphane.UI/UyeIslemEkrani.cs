@@ -200,5 +200,12 @@ namespace DijitalKütüphane.UI
                 txtFotograf.Text = fotografDosyaYolu;
             }
         }
+
+        private void btnGeri_Click(object sender, EventArgs e)
+        {
+            AdminMenuEkrani adminMenuEkrani = new AdminMenuEkrani();
+            adminMenuEkrani.ShowDialog();
+            this.Hide();
+        }
     }
 }

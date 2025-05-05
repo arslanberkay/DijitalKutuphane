@@ -41,7 +41,7 @@
             btnUyeGorunumu.Location = new Point(373, 438);
             btnUyeGorunumu.Name = "btnUyeGorunumu";
             btnUyeGorunumu.Size = new Size(193, 70);
-            btnUyeGorunumu.TabIndex = 1;
+            btnUyeGorunumu.TabIndex = 5;
             btnUyeGorunumu.Text = "Üye Görünümü";
             btnUyeGorunumu.UseVisualStyleBackColor = true;
             btnUyeGorunumu.Click += btnUyeGorunumu_Click;
@@ -51,7 +51,7 @@
             btnUyeIslemleri.Location = new Point(373, 362);
             btnUyeIslemleri.Name = "btnUyeIslemleri";
             btnUyeIslemleri.Size = new Size(193, 70);
-            btnUyeIslemleri.TabIndex = 2;
+            btnUyeIslemleri.TabIndex = 4;
             btnUyeIslemleri.Text = "Üye İşlemleri";
             btnUyeIslemleri.UseVisualStyleBackColor = true;
             btnUyeIslemleri.Click += btnUyeIslemleri_Click;
@@ -71,7 +71,7 @@
             btnKitapIslemleri.Location = new Point(373, 127);
             btnKitapIslemleri.Name = "btnKitapIslemleri";
             btnKitapIslemleri.Size = new Size(193, 70);
-            btnKitapIslemleri.TabIndex = 4;
+            btnKitapIslemleri.TabIndex = 1;
             btnKitapIslemleri.Text = "Kitap İşlemleri";
             btnKitapIslemleri.UseVisualStyleBackColor = true;
             btnKitapIslemleri.Click += btnKitapIslemleri_Click;
@@ -81,7 +81,7 @@
             btnKategoriIslemleri.Location = new Point(373, 51);
             btnKategoriIslemleri.Name = "btnKategoriIslemleri";
             btnKategoriIslemleri.Size = new Size(193, 70);
-            btnKategoriIslemleri.TabIndex = 5;
+            btnKategoriIslemleri.TabIndex = 0;
             btnKategoriIslemleri.Text = "Kategori İşlemleri";
             btnKategoriIslemleri.UseVisualStyleBackColor = true;
             btnKategoriIslemleri.Click += btnKategoriIslemleri_Click;
@@ -91,7 +91,7 @@
             btnYazarIslemleri.Location = new Point(373, 203);
             btnYazarIslemleri.Name = "btnYazarIslemleri";
             btnYazarIslemleri.Size = new Size(193, 70);
-            btnYazarIslemleri.TabIndex = 3;
+            btnYazarIslemleri.TabIndex = 2;
             btnYazarIslemleri.Text = "Yazar İşlemleri";
             btnYazarIslemleri.UseVisualStyleBackColor = true;
             btnYazarIslemleri.Click += btnYazarIslemleri_Click;

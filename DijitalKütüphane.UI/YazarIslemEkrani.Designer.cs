@@ -40,6 +40,7 @@
             txtAd = new TextBox();
             label2 = new Label();
             label1 = new Label();
+            btnGeri = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvYazarlar).BeginInit();
             grpYazarIslemleri.SuspendLayout();
             SuspendLayout();
@@ -49,7 +50,7 @@
             btnTemizle.Location = new Point(477, 227);
             btnTemizle.Name = "btnTemizle";
             btnTemizle.Size = new Size(118, 45);
-            btnTemizle.TabIndex = 5;
+            btnTemizle.TabIndex = 4;
             btnTemizle.Text = "Temizle";
             btnTemizle.UseVisualStyleBackColor = true;
             btnTemizle.Click += btnTemizle_Click;
@@ -59,7 +60,7 @@
             btnGuncelle.Location = new Point(341, 227);
             btnGuncelle.Name = "btnGuncelle";
             btnGuncelle.Size = new Size(130, 45);
-            btnGuncelle.TabIndex = 6;
+            btnGuncelle.TabIndex = 3;
             btnGuncelle.Text = "Güncelle";
             btnGuncelle.UseVisualStyleBackColor = true;
             btnGuncelle.Click += btnGuncelle_Click;
@@ -69,7 +70,7 @@
             btnSil.Location = new Point(205, 227);
             btnSil.Name = "btnSil";
             btnSil.Size = new Size(130, 45);
-            btnSil.TabIndex = 7;
+            btnSil.TabIndex = 2;
             btnSil.Text = "Sil";
             btnSil.UseVisualStyleBackColor = true;
             btnSil.Click += btnSil_Click;
@@ -79,7 +80,7 @@
             btnEkle.Location = new Point(69, 227);
             btnEkle.Name = "btnEkle";
             btnEkle.Size = new Size(130, 45);
-            btnEkle.TabIndex = 8;
+            btnEkle.TabIndex = 1;
             btnEkle.Text = "Ekle";
             btnEkle.UseVisualStyleBackColor = true;
             btnEkle.Click += btnEkle_Click;
@@ -107,7 +108,7 @@
             grpYazarIslemleri.Location = new Point(49, 39);
             grpYazarIslemleri.Name = "grpYazarIslemleri";
             grpYazarIslemleri.Size = new Size(370, 160);
-            grpYazarIslemleri.TabIndex = 3;
+            grpYazarIslemleri.TabIndex = 0;
             grpYazarIslemleri.TabStop = false;
             grpYazarIslemleri.Text = "Yazar İşlemleri";
             // 
@@ -116,7 +117,7 @@
             txtEmail.Location = new Point(119, 115);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(179, 31);
-            txtEmail.TabIndex = 1;
+            txtEmail.TabIndex = 2;
             // 
             // txtSoyad
             // 
@@ -139,7 +140,7 @@
             txtAd.Location = new Point(119, 41);
             txtAd.Name = "txtAd";
             txtAd.Size = new Size(179, 31);
-            txtAd.TabIndex = 1;
+            txtAd.TabIndex = 0;
             // 
             // label2
             // 
@@ -159,11 +160,22 @@
             label1.TabIndex = 0;
             label1.Text = "Ad";
             // 
+            // btnGeri
+            // 
+            btnGeri.Location = new Point(12, -3);
+            btnGeri.Name = "btnGeri";
+            btnGeri.Size = new Size(64, 36);
+            btnGeri.TabIndex = 5;
+            btnGeri.Text = "Geri";
+            btnGeri.UseVisualStyleBackColor = true;
+            btnGeri.Click += btnGeri_Click;
+            // 
             // YazarIslemEkrani
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1308, 792);
+            Controls.Add(btnGeri);
             Controls.Add(btnTemizle);
             Controls.Add(btnGuncelle);
             Controls.Add(btnSil);
@@ -195,5 +207,6 @@
         private Label label1;
         private TextBox txtEmail;
         private Label label3;
+        private Button btnGeri;
     }
 }

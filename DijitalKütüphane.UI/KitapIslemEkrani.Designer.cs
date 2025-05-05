@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "KitapIslemEkrani";
+            btnGeri = new Button();
+            SuspendLayout();
+            // 
+            // btnGeri
+            // 
+            btnGeri.Location = new Point(1, 2);
+            btnGeri.Margin = new Padding(4, 4, 4, 4);
+            btnGeri.Name = "btnGeri";
+            btnGeri.Size = new Size(80, 45);
+            btnGeri.TabIndex = 6;
+            btnGeri.Text = "Geri";
+            btnGeri.UseVisualStyleBackColor = true;
+            // 
+            // KitapIslemEkrani
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1000, 562);
+            Controls.Add(btnGeri);
+            Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            Margin = new Padding(4, 4, 4, 4);
+            Name = "KitapIslemEkrani";
+            Text = "KitapIslemEkrani";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button btnGeri;
     }
 }

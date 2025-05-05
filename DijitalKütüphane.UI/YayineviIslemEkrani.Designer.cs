@@ -44,6 +44,7 @@
             btnSil = new Button();
             btnGuncelle = new Button();
             btnTemizle = new Button();
+            btnGeri = new Button();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvYayinEvleri).BeginInit();
             SuspendLayout();
@@ -60,7 +61,7 @@
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
-            groupBox1.Location = new Point(47, 27);
+            groupBox1.Location = new Point(73, 27);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(360, 237);
             groupBox1.TabIndex = 0;
@@ -73,35 +74,35 @@
             mtxtTelefon.Mask = "(999) 000-0000";
             mtxtTelefon.Name = "mtxtTelefon";
             mtxtTelefon.Size = new Size(202, 31);
-            mtxtTelefon.TabIndex = 2;
+            mtxtTelefon.TabIndex = 1;
             // 
             // txtUlke
             // 
             txtUlke.Location = new Point(120, 144);
             txtUlke.Name = "txtUlke";
             txtUlke.Size = new Size(199, 31);
-            txtUlke.TabIndex = 1;
+            txtUlke.TabIndex = 3;
             // 
             // txtAdres
             // 
             txtAdres.Location = new Point(120, 179);
             txtAdres.Name = "txtAdres";
             txtAdres.Size = new Size(199, 31);
-            txtAdres.TabIndex = 1;
+            txtAdres.TabIndex = 4;
             // 
             // txtSehir
             // 
             txtSehir.Location = new Point(120, 109);
             txtSehir.Name = "txtSehir";
             txtSehir.Size = new Size(199, 31);
-            txtSehir.TabIndex = 1;
+            txtSehir.TabIndex = 2;
             // 
             // txtYayineviAdi
             // 
             txtYayineviAdi.Location = new Point(120, 39);
             txtYayineviAdi.Name = "txtYayineviAdi";
             txtYayineviAdi.Size = new Size(199, 31);
-            txtYayineviAdi.TabIndex = 1;
+            txtYayineviAdi.TabIndex = 0;
             // 
             // label5
             // 
@@ -165,7 +166,7 @@
             btnEkle.Location = new Point(78, 270);
             btnEkle.Name = "btnEkle";
             btnEkle.Size = new Size(92, 44);
-            btnEkle.TabIndex = 2;
+            btnEkle.TabIndex = 1;
             btnEkle.Text = "Ekle";
             btnEkle.UseVisualStyleBackColor = true;
             btnEkle.Click += btnEkle_Click;
@@ -185,7 +186,7 @@
             btnGuncelle.Location = new Point(274, 270);
             btnGuncelle.Name = "btnGuncelle";
             btnGuncelle.Size = new Size(99, 44);
-            btnGuncelle.TabIndex = 2;
+            btnGuncelle.TabIndex = 3;
             btnGuncelle.Text = "Güncelle";
             btnGuncelle.UseVisualStyleBackColor = true;
             btnGuncelle.Click += btnGuncelle_Click;
@@ -195,16 +196,27 @@
             btnTemizle.Location = new Point(379, 270);
             btnTemizle.Name = "btnTemizle";
             btnTemizle.Size = new Size(92, 44);
-            btnTemizle.TabIndex = 2;
+            btnTemizle.TabIndex = 4;
             btnTemizle.Text = "Temizle";
             btnTemizle.UseVisualStyleBackColor = true;
             btnTemizle.Click += btnTemizle_Click;
+            // 
+            // btnGeri
+            // 
+            btnGeri.Location = new Point(3, 1);
+            btnGeri.Name = "btnGeri";
+            btnGeri.Size = new Size(64, 36);
+            btnGeri.TabIndex = 6;
+            btnGeri.Text = "Geri";
+            btnGeri.UseVisualStyleBackColor = true;
+            btnGeri.Click += btnGeri_Click;
             // 
             // YayineviIslemEkrani
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1208, 724);
+            Controls.Add(btnGeri);
             Controls.Add(btnTemizle);
             Controls.Add(btnGuncelle);
             Controls.Add(btnSil);
@@ -240,5 +252,6 @@
         private Button btnSil;
         private Button btnGuncelle;
         private Button btnTemizle;
+        private Button btnGeri;
     }
 }

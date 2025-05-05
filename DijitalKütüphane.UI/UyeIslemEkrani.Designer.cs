@@ -57,6 +57,7 @@
             btnSil = new Button();
             btnEkle = new Button();
             pbFotograf = new PictureBox();
+            btnGeri = new Button();
             grpUyeIslemleri.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvUyeler).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbFotograf).BeginInit();
@@ -336,11 +337,22 @@
             pbFotograf.TabIndex = 7;
             pbFotograf.TabStop = false;
             // 
+            // btnGeri
+            // 
+            btnGeri.Location = new Point(-3, 1);
+            btnGeri.Name = "btnGeri";
+            btnGeri.Size = new Size(64, 36);
+            btnGeri.TabIndex = 8;
+            btnGeri.Text = "Geri";
+            btnGeri.UseVisualStyleBackColor = true;
+            btnGeri.Click += btnGeri_Click;
+            // 
             // UyeIslemEkrani
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1477, 813);
+            Controls.Add(btnGeri);
             Controls.Add(pbFotograf);
             Controls.Add(btnTemizle);
             Controls.Add(btnGuncelle);
@@ -391,5 +403,6 @@
         private Button btnFotografSec;
         private TextBox txtFotograf;
         private PictureBox pbFotograf;
+        private Button btnGeri;
     }
 }
