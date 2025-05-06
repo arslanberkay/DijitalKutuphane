@@ -321,6 +321,7 @@
             btnSil.TabIndex = 11;
             btnSil.Text = "Sil";
             btnSil.UseVisualStyleBackColor = true;
+            btnSil.Click += btnSil_Click;
             // 
             // btnEkle
             // 
@@ -338,8 +339,10 @@
             dgvKitaplar.Location = new Point(22, 429);
             dgvKitaplar.Name = "dgvKitaplar";
             dgvKitaplar.RowHeadersWidth = 51;
+            dgvKitaplar.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvKitaplar.Size = new Size(1352, 362);
             dgvKitaplar.TabIndex = 14;
+            dgvKitaplar.CellClick += dgvKitaplar_CellClick;
             // 
             // KitapIslemEkrani
             // 

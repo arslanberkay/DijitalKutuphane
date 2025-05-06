@@ -66,9 +66,9 @@ namespace DijitalKütüphane.UI
         private void KitapListele()
         {
             var kitaplar = _db.Kitaplar
-                .Include(k=>k.Kategori) //Include içinde sadece Navigation proplar kullanılır.
-                .Include(k=>k.YayinEvi)
-                .Include(k=>k.Yazar)
+                .Include(k => k.Kategori) //Include içinde sadece Navigation proplar kullanılır.
+                .Include(k => k.YayinEvi)
+                .Include(k => k.Yazar)
                 .Select(k => new
                 {
                     k.Id,
@@ -152,5 +152,36 @@ namespace DijitalKütüphane.UI
                 }
             }
         }
+
+        private void dgvKitaplar_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int secilenKitapId = (int)dgvKitaplar.SelectedRows[0].Cells["Id"].Value;
+            var secilenKitap = _db.Kitaplar.Find(secilenKitapId);
+
+            if (secilenKitap == null)
+            {
+                MessageBox.Show("Kitap bulunamadı!");
+                return;
+            }
+
+            txtAd.Text = secilenKitap.KitapAdi;
+            txtAciklama.Text = secilenKitap.KitapAciklama;
+            nudSayfaSayisi.Value = secilenKitap.SayfaSayisi;
+            cbKategori.SelectedItem = secilenKitap.Kategori;
+            cbYazar.SelectedItem = secilenKitap.Yazar;
+            cbDil.SelectedItem = secilenKitap.Dil;
+            cbYayinevi.SelectedItem = secilenKitap.YayinEvi;
+            nudAdet.Value = secilenKitap.Adet;
+            mtxtBasimYili.Text = secilenKitap.BasimYili;
+            cbDurum.SelectedItem = secilenKitap.Durum;
+            mtxtRafNumarasi.Text = secilenKitap.RafNumarasi.ToString();
+        }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }
