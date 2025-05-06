@@ -26,7 +26,9 @@ namespace DijitalKütüphane.UI
 
         private void btnKitapIslemleri_Click(object sender, EventArgs e)
         {
-
+            KitapIslemEkrani kitapIslemEkrani = new KitapIslemEkrani();
+            kitapIslemEkrani.Show();
+            this.Hide();
         }
 
         private void btnYayineviIslemleri_Click(object sender, EventArgs e)
