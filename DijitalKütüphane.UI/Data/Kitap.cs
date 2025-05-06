@@ -16,7 +16,7 @@ namespace DijitalKütüphane.UI.Data
         public int Adet { get; set; }
         public string Durum { get; set; }
         public DateTime BasimYili { get; set; }
-        public DateTime EklenmeTarihi { get; set; }
+        public DateTime EklenmeTarihi => DateTime.Now;
         public int RafNumarasi { get; set; }
 
         public int KategoriId { get; set; }

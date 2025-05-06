@@ -16,5 +16,7 @@ namespace DijitalKütüphane.UI
         {
             InitializeComponent();
         }
+
+       
     }
 }
