@@ -86,6 +86,8 @@ namespace DijitalKütüphane.UI
                 })
                 .ToList();
             dgvKitaplar.DataSource = kitaplar;
+
+            dgvKitaplar.ClearSelection();
         }
 
         private bool ValidateInputs()
@@ -151,12 +153,16 @@ namespace DijitalKütüphane.UI
                     nud.Value = 0;
                 }
             }
+            dgvKitaplar.ClearSelection();
         }
-
+        Kitap secilenKitap;
         private void dgvKitaplar_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (dgvKitaplar.SelectedRows.Count == 0)
+                return;
+
             int secilenKitapId = (int)dgvKitaplar.SelectedRows[0].Cells["Id"].Value;
-            var secilenKitap = _db.Kitaplar.Find(secilenKitapId);
+            secilenKitap = _db.Kitaplar.Find(secilenKitapId);
 
             if (secilenKitap == null)
             {
@@ -168,7 +174,7 @@ namespace DijitalKütüphane.UI
             txtAciklama.Text = secilenKitap.KitapAciklama;
             nudSayfaSayisi.Value = secilenKitap.SayfaSayisi;
             cbKategori.SelectedItem = secilenKitap.Kategori;
-            cbYazar.SelectedItem = secilenKitap.Yazar;
+            cbYazar.SelectedValue = secilenKitap.YazarId; //Dikkat newleyerek anonim bir tip kullandığım için selectedValue ile eşleme yapıldı
             cbDil.SelectedItem = secilenKitap.Dil;
             cbYayinevi.SelectedItem = secilenKitap.YayinEvi;
             nudAdet.Value = secilenKitap.Adet;
@@ -179,9 +185,71 @@ namespace DijitalKütüphane.UI
 
         private void btnSil_Click(object sender, EventArgs e)
         {
+            if (dgvKitaplar.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Lütfen silmek istediğiniz kitabı seçiniz!");
+                return;
+            }
+            if (secilenKitap == null)
+            {
+                MessageBox.Show("Kitap bulunamadı!");
+                return;
+            }
+
+            _db.Kitaplar.Remove(secilenKitap);
+            _db.SaveChanges();
+
+            secilenKitap = null;
+
+            MessageBox.Show("Kitap başarıyla silindi");
+            KitapListele();
+            KitapIslemleriTemizle();
+        }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            if (dgvKitaplar.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Lütfen güncellemek istediğiniz kitabı seçiniz!");
+                return;
+            }
+            if (secilenKitap == null)
+            {
+                MessageBox.Show("Kitap bulunamadı!");
+                return;
+            }
+
+            secilenKitap.KitapAdi = txtAd.Text;
+            secilenKitap.KitapAciklama = txtAciklama.Text;
+            secilenKitap.SayfaSayisi = int.Parse(nudSayfaSayisi.Value.ToString());
+            secilenKitap.KategoriId = (int)cbKategori.SelectedValue;
+            secilenKitap.Dil = cbDil.SelectedItem.ToString();
+            secilenKitap.YayineviId = (cbYayinevi.SelectedItem as Yayinevi).Id;
+            secilenKitap.YazarId = (int)cbYazar.SelectedValue;
+            secilenKitap.Adet = (int)nudAdet.Value;
+            secilenKitap.BasimYili = mtxtBasimYili.Text;
+            secilenKitap.Durum = cbDurum.SelectedItem.ToString();
+            secilenKitap.RafNumarasi = Convert.ToInt32(mtxtRafNumarasi.Text);
+
+            _db.SaveChanges();
+            secilenKitap = null;
+
+            MessageBox.Show("Kitap başarıyla güncellendi");
+            KitapListele();
+            KitapIslemleriTemizle();
 
         }
 
+        private void btnTemizle_Click(object sender, EventArgs e)
+        {
+            KitapIslemleriTemizle();
+        }
 
+        private void btnGeri_Click(object sender, EventArgs e)
+        {
+            AdminMenuEkrani adminMenuEkrani = new AdminMenuEkrani();
+            adminMenuEkrani.Show();
+            this.Hide();
+        }
     }
 }

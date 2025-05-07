@@ -82,6 +82,8 @@ namespace DijitalKütüphane.UI
         Yayinevi secilenYayinEvi;
         private void dgvYayinEvleri_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (dgvYayinEvleri.SelectedRows.Count == 0) { return; }
+
             secilenYayinEvi = SeciliYayinevi();
 
             txtYayineviAdi.Text = secilenYayinEvi.YayineviAdi;

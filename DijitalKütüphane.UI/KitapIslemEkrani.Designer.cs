@@ -69,9 +69,10 @@
             btnGeri.Margin = new Padding(4);
             btnGeri.Name = "btnGeri";
             btnGeri.Size = new Size(80, 45);
-            btnGeri.TabIndex = 6;
+            btnGeri.TabIndex = 2;
             btnGeri.Text = "Geri";
             btnGeri.UseVisualStyleBackColor = true;
+            btnGeri.Click += btnGeri_Click;
             // 
             // label1
             // 
@@ -87,7 +88,7 @@
             txtAd.Location = new Point(172, 62);
             txtAd.Name = "txtAd";
             txtAd.Size = new Size(169, 31);
-            txtAd.TabIndex = 8;
+            txtAd.TabIndex = 0;
             // 
             // grpKitapIslemleri
             // 
@@ -116,23 +117,25 @@
             grpKitapIslemleri.Location = new Point(92, 53);
             grpKitapIslemleri.Name = "grpKitapIslemleri";
             grpKitapIslemleri.Size = new Size(750, 309);
-            grpKitapIslemleri.TabIndex = 9;
+            grpKitapIslemleri.TabIndex = 0;
             grpKitapIslemleri.TabStop = false;
             grpKitapIslemleri.Text = "Kitap İşlemleri";
             // 
             // nudSayfaSayisi
             // 
             nudSayfaSayisi.Location = new Point(175, 101);
+            nudSayfaSayisi.Maximum = new decimal(new int[] { 9999999, 0, 0, 0 });
             nudSayfaSayisi.Name = "nudSayfaSayisi";
             nudSayfaSayisi.Size = new Size(166, 31);
-            nudSayfaSayisi.TabIndex = 34;
+            nudSayfaSayisi.TabIndex = 2;
             // 
             // nudAdet
             // 
             nudAdet.Location = new Point(175, 214);
+            nudAdet.Maximum = new decimal(new int[] { 9999999, 0, 0, 0 });
             nudAdet.Name = "nudAdet";
             nudAdet.Size = new Size(166, 31);
-            nudAdet.TabIndex = 34;
+            nudAdet.TabIndex = 7;
             // 
             // mtxtRafNumarasi
             // 
@@ -140,7 +143,7 @@
             mtxtRafNumarasi.Mask = "0000";
             mtxtRafNumarasi.Name = "mtxtRafNumarasi";
             mtxtRafNumarasi.Size = new Size(209, 31);
-            mtxtRafNumarasi.TabIndex = 32;
+            mtxtRafNumarasi.TabIndex = 10;
             mtxtRafNumarasi.ValidatingType = typeof(int);
             // 
             // mtxtBasimYili
@@ -149,7 +152,7 @@
             mtxtBasimYili.Mask = "0000";
             mtxtBasimYili.Name = "mtxtBasimYili";
             mtxtBasimYili.Size = new Size(209, 31);
-            mtxtBasimYili.TabIndex = 32;
+            mtxtBasimYili.TabIndex = 8;
             mtxtBasimYili.ValidatingType = typeof(int);
             // 
             // cbDil
@@ -159,7 +162,7 @@
             cbDil.Location = new Point(475, 134);
             cbDil.Name = "cbDil";
             cbDil.Size = new Size(212, 33);
-            cbDil.TabIndex = 31;
+            cbDil.TabIndex = 4;
             // 
             // cbDurum
             // 
@@ -168,7 +171,7 @@
             cbDurum.Location = new Point(172, 255);
             cbDurum.Name = "cbDurum";
             cbDurum.Size = new Size(167, 33);
-            cbDurum.TabIndex = 30;
+            cbDurum.TabIndex = 9;
             // 
             // cbYazar
             // 
@@ -177,7 +180,7 @@
             cbYazar.Location = new Point(475, 175);
             cbYazar.Name = "cbYazar";
             cbYazar.Size = new Size(212, 33);
-            cbYazar.TabIndex = 29;
+            cbYazar.TabIndex = 6;
             // 
             // cbKategori
             // 
@@ -186,7 +189,7 @@
             cbKategori.Location = new Point(172, 141);
             cbKategori.Name = "cbKategori";
             cbKategori.Size = new Size(169, 33);
-            cbKategori.TabIndex = 29;
+            cbKategori.TabIndex = 3;
             // 
             // cbYayinevi
             // 
@@ -195,7 +198,7 @@
             cbYayinevi.Location = new Point(172, 175);
             cbYayinevi.Name = "cbYayinevi";
             cbYayinevi.Size = new Size(169, 33);
-            cbYayinevi.TabIndex = 29;
+            cbYayinevi.TabIndex = 5;
             // 
             // label11
             // 
@@ -239,7 +242,7 @@
             txtAciklama.Multiline = true;
             txtAciklama.Name = "txtAciklama";
             txtAciklama.Size = new Size(212, 69);
-            txtAciklama.TabIndex = 20;
+            txtAciklama.TabIndex = 1;
             // 
             // label7
             // 
@@ -300,25 +303,27 @@
             btnTemizle.Location = new Point(548, 368);
             btnTemizle.Name = "btnTemizle";
             btnTemizle.Size = new Size(118, 45);
-            btnTemizle.TabIndex = 13;
+            btnTemizle.TabIndex = 4;
             btnTemizle.Text = "Temizle";
             btnTemizle.UseVisualStyleBackColor = true;
+            btnTemizle.Click += btnTemizle_Click;
             // 
             // btnGuncelle
             // 
             btnGuncelle.Location = new Point(412, 368);
             btnGuncelle.Name = "btnGuncelle";
             btnGuncelle.Size = new Size(130, 45);
-            btnGuncelle.TabIndex = 12;
+            btnGuncelle.TabIndex = 3;
             btnGuncelle.Text = "Güncelle";
             btnGuncelle.UseVisualStyleBackColor = true;
+            btnGuncelle.Click += btnGuncelle_Click;
             // 
             // btnSil
             // 
             btnSil.Location = new Point(276, 368);
             btnSil.Name = "btnSil";
             btnSil.Size = new Size(130, 45);
-            btnSil.TabIndex = 11;
+            btnSil.TabIndex = 2;
             btnSil.Text = "Sil";
             btnSil.UseVisualStyleBackColor = true;
             btnSil.Click += btnSil_Click;
@@ -328,7 +333,7 @@
             btnEkle.Location = new Point(140, 368);
             btnEkle.Name = "btnEkle";
             btnEkle.Size = new Size(130, 45);
-            btnEkle.TabIndex = 10;
+            btnEkle.TabIndex = 1;
             btnEkle.Text = "Ekle";
             btnEkle.UseVisualStyleBackColor = true;
             btnEkle.Click += btnEkle_Click;

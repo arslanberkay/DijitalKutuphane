@@ -64,6 +64,8 @@ namespace DijitalKütüphane.UI
         Yazar secilenYazar;
         private void dgvYazarlar_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (dgvYazarlar.SelectedRows.Count == 0) { return; }
+
             secilenYazar = dgvYazarlar.SelectedRows[0].DataBoundItem as Yazar;
 
             txtAd.Text = secilenYazar.Ad;

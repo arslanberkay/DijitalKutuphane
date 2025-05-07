@@ -72,6 +72,8 @@ namespace DijitalKütüphane.UI
         Kategori secilenKategori;
         private void dgvKategoriler_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (dgvKategoriler.SelectedRows.Count == 0) { return; }
+
             secilenKategori = dgvKategoriler.SelectedRows[0].DataBoundItem as Kategori;
 
             txtAd.Text = secilenKategori.KategoriAdi;

@@ -113,6 +113,8 @@ namespace DijitalKütüphane.UI
         Uye secilenUye;
         private void dgvUyeler_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (dgvUyeler.SelectedRows.Count == 0) { return; }
+
             secilenUye = dgvUyeler.SelectedRows[0].DataBoundItem as Uye;
 
             txtAd.Text = secilenUye.Ad;
