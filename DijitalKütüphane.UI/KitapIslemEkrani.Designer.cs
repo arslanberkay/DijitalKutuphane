@@ -122,7 +122,7 @@
             grpKitapIslemleri.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
             grpKitapIslemleri.Location = new Point(99, 53);
             grpKitapIslemleri.Name = "grpKitapIslemleri";
-            grpKitapIslemleri.Size = new Size(871, 294);
+            grpKitapIslemleri.Size = new Size(927, 294);
             grpKitapIslemleri.TabIndex = 0;
             grpKitapIslemleri.TabStop = false;
             grpKitapIslemleri.Text = "Kitap İşlemleri";
@@ -151,7 +151,7 @@
             mtxtRafNumarasi.Location = new Point(607, 237);
             mtxtRafNumarasi.Mask = "0000";
             mtxtRafNumarasi.Name = "mtxtRafNumarasi";
-            mtxtRafNumarasi.Size = new Size(212, 32);
+            mtxtRafNumarasi.Size = new Size(262, 32);
             mtxtRafNumarasi.TabIndex = 10;
             mtxtRafNumarasi.ValidatingType = typeof(int);
             // 
@@ -161,7 +161,7 @@
             mtxtBasimYili.Location = new Point(607, 198);
             mtxtBasimYili.Mask = "0000";
             mtxtBasimYili.Name = "mtxtBasimYili";
-            mtxtBasimYili.Size = new Size(212, 32);
+            mtxtBasimYili.Size = new Size(262, 32);
             mtxtBasimYili.TabIndex = 8;
             mtxtBasimYili.ValidatingType = typeof(int);
             // 
@@ -172,7 +172,7 @@
             cbDil.FormattingEnabled = true;
             cbDil.Location = new Point(607, 115);
             cbDil.Name = "cbDil";
-            cbDil.Size = new Size(212, 33);
+            cbDil.Size = new Size(262, 33);
             cbDil.TabIndex = 4;
             // 
             // cbDurum
@@ -192,7 +192,7 @@
             cbYazar.FormattingEnabled = true;
             cbYazar.Location = new Point(607, 157);
             cbYazar.Name = "cbYazar";
-            cbYazar.Size = new Size(212, 33);
+            cbYazar.Size = new Size(262, 33);
             cbYazar.TabIndex = 6;
             // 
             // cbKategori
@@ -261,7 +261,7 @@
             txtAciklama.Location = new Point(607, 39);
             txtAciklama.Multiline = true;
             txtAciklama.Name = "txtAciklama";
-            txtAciklama.Size = new Size(212, 69);
+            txtAciklama.Size = new Size(262, 69);
             txtAciklama.TabIndex = 1;
             // 
             // label7

@@ -87,9 +87,10 @@
             grpUyeIslemleri.Controls.Add(label6);
             grpUyeIslemleri.Controls.Add(label2);
             grpUyeIslemleri.Controls.Add(label1);
-            grpUyeIslemleri.Location = new Point(67, 45);
+            grpUyeIslemleri.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            grpUyeIslemleri.Location = new Point(87, 58);
             grpUyeIslemleri.Name = "grpUyeIslemleri";
-            grpUyeIslemleri.Size = new Size(824, 308);
+            grpUyeIslemleri.Size = new Size(968, 274);
             grpUyeIslemleri.TabIndex = 0;
             grpUyeIslemleri.TabStop = false;
             grpUyeIslemleri.Text = "Üye İşlemleri";
@@ -97,10 +98,11 @@
             // btnFotografSec
             // 
             btnFotografSec.BackColor = Color.FromArgb(52, 73, 94);
+            btnFotografSec.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
             btnFotografSec.ForeColor = SystemColors.ButtonHighlight;
-            btnFotografSec.Location = new Point(711, 203);
+            btnFotografSec.Location = new Point(839, 213);
             btnFotografSec.Name = "btnFotografSec";
-            btnFotografSec.Size = new Size(54, 34);
+            btnFotografSec.Size = new Size(90, 34);
             btnFotografSec.TabIndex = 5;
             btnFotografSec.Text = "Seç";
             btnFotografSec.UseVisualStyleBackColor = false;
@@ -108,23 +110,26 @@
             // 
             // dtpDogumTarihi
             // 
-            dtpDogumTarihi.Location = new Point(155, 121);
+            dtpDogumTarihi.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
+            dtpDogumTarihi.Location = new Point(161, 127);
             dtpDogumTarihi.Name = "dtpDogumTarihi";
-            dtpDogumTarihi.Size = new Size(183, 31);
+            dtpDogumTarihi.Size = new Size(248, 32);
             dtpDogumTarihi.TabIndex = 4;
             // 
             // mtxtTelefon
             // 
-            mtxtTelefon.Location = new Point(523, 123);
+            mtxtTelefon.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
+            mtxtTelefon.Location = new Point(592, 128);
             mtxtTelefon.Mask = "(999) 000-0000";
             mtxtTelefon.Name = "mtxtTelefon";
-            mtxtTelefon.Size = new Size(182, 31);
+            mtxtTelefon.Size = new Size(241, 32);
             mtxtTelefon.TabIndex = 3;
             // 
             // chkSifreGoster
             // 
             chkSifreGoster.AutoSize = true;
-            chkSifreGoster.Location = new Point(711, 83);
+            chkSifreGoster.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
+            chkSifreGoster.Location = new Point(839, 88);
             chkSifreGoster.Name = "chkSifreGoster";
             chkSifreGoster.Size = new Size(90, 29);
             chkSifreGoster.TabIndex = 2;
@@ -133,171 +138,191 @@
             // 
             // txtFotograf
             // 
-            txtFotograf.Location = new Point(523, 206);
+            txtFotograf.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
+            txtFotograf.Location = new Point(592, 214);
             txtFotograf.Name = "txtFotograf";
             txtFotograf.ReadOnly = true;
-            txtFotograf.Size = new Size(182, 31);
+            txtFotograf.Size = new Size(241, 32);
             txtFotograf.TabIndex = 1;
             // 
             // txtSehir
             // 
-            txtSehir.Location = new Point(169, 206);
+            txtSehir.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
+            txtSehir.Location = new Point(161, 213);
             txtSehir.Name = "txtSehir";
-            txtSehir.Size = new Size(182, 31);
+            txtSehir.Size = new Size(248, 32);
             txtSehir.TabIndex = 1;
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(523, 162);
+            txtEmail.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
+            txtEmail.Location = new Point(592, 171);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(182, 31);
+            txtEmail.Size = new Size(241, 32);
             txtEmail.TabIndex = 1;
             // 
             // txtUlke
             // 
-            txtUlke.Location = new Point(169, 165);
+            txtUlke.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
+            txtUlke.Location = new Point(162, 170);
             txtUlke.Name = "txtUlke";
-            txtUlke.Size = new Size(182, 31);
+            txtUlke.Size = new Size(248, 32);
             txtUlke.TabIndex = 1;
             // 
             // txtSifre
             // 
-            txtSifre.Location = new Point(523, 78);
+            txtSifre.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
+            txtSifre.Location = new Point(592, 85);
             txtSifre.Name = "txtSifre";
-            txtSifre.Size = new Size(182, 31);
+            txtSifre.Size = new Size(241, 32);
             txtSifre.TabIndex = 1;
             // 
             // txtKullaniciAdi
             // 
-            txtKullaniciAdi.Location = new Point(523, 38);
+            txtKullaniciAdi.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
+            txtKullaniciAdi.Location = new Point(592, 42);
             txtKullaniciAdi.Name = "txtKullaniciAdi";
-            txtKullaniciAdi.Size = new Size(182, 31);
+            txtKullaniciAdi.Size = new Size(241, 32);
             txtKullaniciAdi.TabIndex = 1;
             // 
             // txtSoyad
             // 
-            txtSoyad.Location = new Point(156, 78);
+            txtSoyad.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
+            txtSoyad.Location = new Point(162, 84);
             txtSoyad.Name = "txtSoyad";
-            txtSoyad.Size = new Size(182, 31);
+            txtSoyad.Size = new Size(248, 32);
             txtSoyad.TabIndex = 1;
             // 
             // txtAd
             // 
-            txtAd.Location = new Point(156, 38);
+            txtAd.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
+            txtAd.Location = new Point(162, 41);
             txtAd.Name = "txtAd";
-            txtAd.Size = new Size(182, 31);
+            txtAd.Size = new Size(248, 32);
             txtAd.TabIndex = 1;
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(393, 209);
+            label9.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
+            label9.Location = new Point(465, 216);
             label9.Name = "label9";
-            label9.Size = new Size(83, 25);
+            label9.Size = new Size(86, 25);
             label9.TabIndex = 0;
             label9.Text = "Fotoğraf";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(26, 124);
+            label5.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
+            label5.Location = new Point(26, 127);
             label5.Name = "label5";
-            label5.Size = new Size(123, 25);
+            label5.Size = new Size(127, 25);
             label5.TabIndex = 0;
             label5.Text = "Doğum Tarihi";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(39, 209);
+            label8.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
+            label8.Location = new Point(26, 213);
             label8.Name = "label8";
-            label8.Size = new Size(54, 25);
+            label8.Size = new Size(55, 25);
             label8.TabIndex = 0;
             label8.Text = "Şehir";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(393, 81);
+            label4.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
+            label4.Location = new Point(465, 87);
             label4.Name = "label4";
-            label4.Size = new Size(50, 25);
+            label4.Size = new Size(51, 25);
             label4.TabIndex = 0;
             label4.Text = "Şifre";
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(393, 165);
+            label10.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
+            label10.Location = new Point(465, 173);
             label10.Name = "label10";
-            label10.Size = new Size(56, 25);
+            label10.Size = new Size(59, 25);
             label10.TabIndex = 0;
             label10.Text = "Email";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(39, 168);
+            label7.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
+            label7.Location = new Point(26, 170);
             label7.Name = "label7";
-            label7.Size = new Size(49, 25);
+            label7.Size = new Size(50, 25);
             label7.TabIndex = 0;
             label7.Text = "Ülke";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(393, 41);
+            label3.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
+            label3.Location = new Point(465, 44);
             label3.Name = "label3";
-            label3.Size = new Size(115, 25);
+            label3.Size = new Size(119, 25);
             label3.TabIndex = 0;
             label3.Text = "Kullanıcı Adı";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(393, 126);
+            label6.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
+            label6.Location = new Point(465, 130);
             label6.Name = "label6";
-            label6.Size = new Size(73, 25);
+            label6.Size = new Size(74, 25);
             label6.TabIndex = 0;
             label6.Text = "Telefon";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(26, 81);
+            label2.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
+            label2.Location = new Point(26, 84);
             label2.Name = "label2";
-            label2.Size = new Size(62, 25);
+            label2.Size = new Size(64, 25);
             label2.TabIndex = 0;
             label2.Text = "Soyad";
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
             label1.Location = new Point(26, 41);
             label1.Name = "label1";
-            label1.Size = new Size(35, 25);
+            label1.Size = new Size(36, 25);
             label1.TabIndex = 0;
             label1.Text = "Ad";
             // 
             // dgvUyeler
             // 
+            dgvUyeler.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             dgvUyeler.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvUyeler.BackgroundColor = Color.FromArgb(164, 176, 190);
             dgvUyeler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvUyeler.Location = new Point(31, 513);
+            dgvUyeler.Location = new Point(87, 424);
             dgvUyeler.Name = "dgvUyeler";
             dgvUyeler.RowHeadersWidth = 51;
             dgvUyeler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvUyeler.Size = new Size(1295, 288);
+            dgvUyeler.Size = new Size(1262, 288);
             dgvUyeler.TabIndex = 2;
             dgvUyeler.CellClick += dgvUyeler_CellClick;
             // 
             // btnTemizle
             // 
             btnTemizle.BackColor = Color.FromArgb(52, 73, 94);
+            btnTemizle.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
             btnTemizle.ForeColor = SystemColors.ButtonHighlight;
-            btnTemizle.Location = new Point(580, 378);
+            btnTemizle.Location = new Point(537, 349);
             btnTemizle.Name = "btnTemizle";
-            btnTemizle.Size = new Size(130, 45);
+            btnTemizle.Size = new Size(125, 50);
             btnTemizle.TabIndex = 3;
             btnTemizle.Text = "Temizle";
             btnTemizle.UseVisualStyleBackColor = false;
@@ -306,10 +331,11 @@
             // btnGuncelle
             // 
             btnGuncelle.BackColor = Color.FromArgb(52, 73, 94);
+            btnGuncelle.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
             btnGuncelle.ForeColor = SystemColors.ButtonHighlight;
-            btnGuncelle.Location = new Point(426, 378);
+            btnGuncelle.Location = new Point(387, 349);
             btnGuncelle.Name = "btnGuncelle";
-            btnGuncelle.Size = new Size(130, 45);
+            btnGuncelle.Size = new Size(125, 50);
             btnGuncelle.TabIndex = 4;
             btnGuncelle.Text = "Güncelle";
             btnGuncelle.UseVisualStyleBackColor = false;
@@ -318,10 +344,11 @@
             // btnSil
             // 
             btnSil.BackColor = Color.FromArgb(52, 73, 94);
+            btnSil.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
             btnSil.ForeColor = SystemColors.ButtonHighlight;
-            btnSil.Location = new Point(268, 378);
+            btnSil.Location = new Point(237, 349);
             btnSil.Name = "btnSil";
-            btnSil.Size = new Size(130, 45);
+            btnSil.Size = new Size(125, 50);
             btnSil.TabIndex = 5;
             btnSil.Text = "Sil";
             btnSil.UseVisualStyleBackColor = false;
@@ -330,10 +357,11 @@
             // btnEkle
             // 
             btnEkle.BackColor = Color.FromArgb(52, 73, 94);
+            btnEkle.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
             btnEkle.ForeColor = SystemColors.ButtonHighlight;
-            btnEkle.Location = new Point(106, 378);
+            btnEkle.Location = new Point(87, 349);
             btnEkle.Name = "btnEkle";
-            btnEkle.Size = new Size(130, 45);
+            btnEkle.Size = new Size(125, 50);
             btnEkle.TabIndex = 6;
             btnEkle.Text = "Ekle";
             btnEkle.UseVisualStyleBackColor = false;
@@ -341,9 +369,9 @@
             // 
             // pbFotograf
             // 
-            pbFotograf.Location = new Point(1041, 40);
+            pbFotograf.Location = new Point(1086, 74);
             pbFotograf.Name = "pbFotograf";
-            pbFotograf.Size = new Size(277, 222);
+            pbFotograf.Size = new Size(295, 258);
             pbFotograf.SizeMode = PictureBoxSizeMode.Zoom;
             pbFotograf.TabIndex = 7;
             pbFotograf.TabStop = false;
@@ -351,10 +379,11 @@
             // btnGeri
             // 
             btnGeri.BackColor = Color.FromArgb(52, 73, 94);
+            btnGeri.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
             btnGeri.ForeColor = SystemColors.ButtonHighlight;
-            btnGeri.Location = new Point(-3, 1);
+            btnGeri.Location = new Point(12, 12);
             btnGeri.Name = "btnGeri";
-            btnGeri.Size = new Size(64, 36);
+            btnGeri.Size = new Size(75, 40);
             btnGeri.TabIndex = 8;
             btnGeri.Text = "Geri";
             btnGeri.UseVisualStyleBackColor = false;
@@ -365,7 +394,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(164, 176, 190);
-            ClientSize = new Size(1382, 813);
+            ClientSize = new Size(1455, 763);
             Controls.Add(btnGeri);
             Controls.Add(pbFotograf);
             Controls.Add(btnTemizle);
@@ -378,6 +407,7 @@
             Margin = new Padding(4);
             Name = "UyeIslemEkrani";
             Text = "UyeIslemEkrani";
+            WindowState = FormWindowState.Maximized;
             Load += UyeIslemEkrani_Load;
             grpUyeIslemleri.ResumeLayout(false);
             grpUyeIslemleri.PerformLayout();
