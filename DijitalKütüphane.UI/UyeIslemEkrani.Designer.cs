@@ -87,33 +87,35 @@
             grpUyeIslemleri.Controls.Add(label6);
             grpUyeIslemleri.Controls.Add(label2);
             grpUyeIslemleri.Controls.Add(label1);
-            grpUyeIslemleri.Location = new Point(67, 28);
+            grpUyeIslemleri.Location = new Point(67, 45);
             grpUyeIslemleri.Name = "grpUyeIslemleri";
-            grpUyeIslemleri.Size = new Size(544, 459);
+            grpUyeIslemleri.Size = new Size(824, 308);
             grpUyeIslemleri.TabIndex = 0;
             grpUyeIslemleri.TabStop = false;
             grpUyeIslemleri.Text = "Üye İşlemleri";
             // 
             // btnFotografSec
             // 
-            btnFotografSec.Location = new Point(344, 413);
+            btnFotografSec.BackColor = Color.FromArgb(52, 73, 94);
+            btnFotografSec.ForeColor = SystemColors.ButtonHighlight;
+            btnFotografSec.Location = new Point(711, 203);
             btnFotografSec.Name = "btnFotografSec";
             btnFotografSec.Size = new Size(54, 34);
             btnFotografSec.TabIndex = 5;
             btnFotografSec.Text = "Seç";
-            btnFotografSec.UseVisualStyleBackColor = true;
+            btnFotografSec.UseVisualStyleBackColor = false;
             btnFotografSec.Click += btnFotografSec_Click;
             // 
             // dtpDogumTarihi
             // 
-            dtpDogumTarihi.Location = new Point(155, 206);
+            dtpDogumTarihi.Location = new Point(155, 121);
             dtpDogumTarihi.Name = "dtpDogumTarihi";
             dtpDogumTarihi.Size = new Size(183, 31);
             dtpDogumTarihi.TabIndex = 4;
             // 
             // mtxtTelefon
             // 
-            mtxtTelefon.Location = new Point(156, 248);
+            mtxtTelefon.Location = new Point(523, 123);
             mtxtTelefon.Mask = "(999) 000-0000";
             mtxtTelefon.Name = "mtxtTelefon";
             mtxtTelefon.Size = new Size(182, 31);
@@ -122,7 +124,7 @@
             // chkSifreGoster
             // 
             chkSifreGoster.AutoSize = true;
-            chkSifreGoster.Location = new Point(344, 169);
+            chkSifreGoster.Location = new Point(711, 83);
             chkSifreGoster.Name = "chkSifreGoster";
             chkSifreGoster.Size = new Size(90, 29);
             chkSifreGoster.TabIndex = 2;
@@ -131,7 +133,7 @@
             // 
             // txtFotograf
             // 
-            txtFotograf.Location = new Point(156, 416);
+            txtFotograf.Location = new Point(523, 206);
             txtFotograf.Name = "txtFotograf";
             txtFotograf.ReadOnly = true;
             txtFotograf.Size = new Size(182, 31);
@@ -139,42 +141,42 @@
             // 
             // txtSehir
             // 
-            txtSehir.Location = new Point(156, 374);
+            txtSehir.Location = new Point(169, 206);
             txtSehir.Name = "txtSehir";
             txtSehir.Size = new Size(182, 31);
             txtSehir.TabIndex = 1;
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(156, 290);
+            txtEmail.Location = new Point(523, 162);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(182, 31);
             txtEmail.TabIndex = 1;
             // 
             // txtUlke
             // 
-            txtUlke.Location = new Point(156, 332);
+            txtUlke.Location = new Point(169, 165);
             txtUlke.Name = "txtUlke";
             txtUlke.Size = new Size(182, 31);
             txtUlke.TabIndex = 1;
             // 
             // txtSifre
             // 
-            txtSifre.Location = new Point(156, 164);
+            txtSifre.Location = new Point(523, 78);
             txtSifre.Name = "txtSifre";
             txtSifre.Size = new Size(182, 31);
             txtSifre.TabIndex = 1;
             // 
             // txtKullaniciAdi
             // 
-            txtKullaniciAdi.Location = new Point(156, 122);
+            txtKullaniciAdi.Location = new Point(523, 38);
             txtKullaniciAdi.Name = "txtKullaniciAdi";
             txtKullaniciAdi.Size = new Size(182, 31);
             txtKullaniciAdi.TabIndex = 1;
             // 
             // txtSoyad
             // 
-            txtSoyad.Location = new Point(156, 80);
+            txtSoyad.Location = new Point(156, 78);
             txtSoyad.Name = "txtSoyad";
             txtSoyad.Size = new Size(182, 31);
             txtSoyad.TabIndex = 1;
@@ -189,7 +191,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(26, 419);
+            label9.Location = new Point(393, 209);
             label9.Name = "label9";
             label9.Size = new Size(83, 25);
             label9.TabIndex = 0;
@@ -198,7 +200,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(26, 209);
+            label5.Location = new Point(26, 124);
             label5.Name = "label5";
             label5.Size = new Size(123, 25);
             label5.TabIndex = 0;
@@ -207,7 +209,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(26, 377);
+            label8.Location = new Point(39, 209);
             label8.Name = "label8";
             label8.Size = new Size(54, 25);
             label8.TabIndex = 0;
@@ -216,7 +218,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(26, 167);
+            label4.Location = new Point(393, 81);
             label4.Name = "label4";
             label4.Size = new Size(50, 25);
             label4.TabIndex = 0;
@@ -225,7 +227,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(26, 293);
+            label10.Location = new Point(393, 165);
             label10.Name = "label10";
             label10.Size = new Size(56, 25);
             label10.TabIndex = 0;
@@ -234,7 +236,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(26, 335);
+            label7.Location = new Point(39, 168);
             label7.Name = "label7";
             label7.Size = new Size(49, 25);
             label7.TabIndex = 0;
@@ -243,7 +245,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(26, 125);
+            label3.Location = new Point(393, 41);
             label3.Name = "label3";
             label3.Size = new Size(115, 25);
             label3.TabIndex = 0;
@@ -252,7 +254,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(26, 251);
+            label6.Location = new Point(393, 126);
             label6.Name = "label6";
             label6.Size = new Size(73, 25);
             label6.TabIndex = 0;
@@ -261,7 +263,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(26, 83);
+            label2.Location = new Point(26, 81);
             label2.Name = "label2";
             label2.Size = new Size(62, 25);
             label2.TabIndex = 0;
@@ -279,58 +281,67 @@
             // dgvUyeler
             // 
             dgvUyeler.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvUyeler.BackgroundColor = Color.FromArgb(164, 176, 190);
             dgvUyeler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvUyeler.Location = new Point(31, 513);
             dgvUyeler.Name = "dgvUyeler";
             dgvUyeler.RowHeadersWidth = 51;
             dgvUyeler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvUyeler.Size = new Size(1416, 288);
+            dgvUyeler.Size = new Size(1295, 288);
             dgvUyeler.TabIndex = 2;
             dgvUyeler.CellClick += dgvUyeler_CellClick;
             // 
             // btnTemizle
             // 
-            btnTemizle.Location = new Point(617, 425);
+            btnTemizle.BackColor = Color.FromArgb(52, 73, 94);
+            btnTemizle.ForeColor = SystemColors.ButtonHighlight;
+            btnTemizle.Location = new Point(580, 378);
             btnTemizle.Name = "btnTemizle";
             btnTemizle.Size = new Size(130, 45);
             btnTemizle.TabIndex = 3;
             btnTemizle.Text = "Temizle";
-            btnTemizle.UseVisualStyleBackColor = true;
+            btnTemizle.UseVisualStyleBackColor = false;
             btnTemizle.Click += btnTemizle_Click;
             // 
             // btnGuncelle
             // 
-            btnGuncelle.Location = new Point(617, 373);
+            btnGuncelle.BackColor = Color.FromArgb(52, 73, 94);
+            btnGuncelle.ForeColor = SystemColors.ButtonHighlight;
+            btnGuncelle.Location = new Point(426, 378);
             btnGuncelle.Name = "btnGuncelle";
             btnGuncelle.Size = new Size(130, 45);
             btnGuncelle.TabIndex = 4;
             btnGuncelle.Text = "Güncelle";
-            btnGuncelle.UseVisualStyleBackColor = true;
+            btnGuncelle.UseVisualStyleBackColor = false;
             btnGuncelle.Click += btnGuncelle_Click;
             // 
             // btnSil
             // 
-            btnSil.Location = new Point(617, 321);
+            btnSil.BackColor = Color.FromArgb(52, 73, 94);
+            btnSil.ForeColor = SystemColors.ButtonHighlight;
+            btnSil.Location = new Point(268, 378);
             btnSil.Name = "btnSil";
             btnSil.Size = new Size(130, 45);
             btnSil.TabIndex = 5;
             btnSil.Text = "Sil";
-            btnSil.UseVisualStyleBackColor = true;
+            btnSil.UseVisualStyleBackColor = false;
             btnSil.Click += btnSil_Click;
             // 
             // btnEkle
             // 
-            btnEkle.Location = new Point(617, 269);
+            btnEkle.BackColor = Color.FromArgb(52, 73, 94);
+            btnEkle.ForeColor = SystemColors.ButtonHighlight;
+            btnEkle.Location = new Point(106, 378);
             btnEkle.Name = "btnEkle";
             btnEkle.Size = new Size(130, 45);
             btnEkle.TabIndex = 6;
             btnEkle.Text = "Ekle";
-            btnEkle.UseVisualStyleBackColor = true;
+            btnEkle.UseVisualStyleBackColor = false;
             btnEkle.Click += btnEkle_Click;
             // 
             // pbFotograf
             // 
-            pbFotograf.Location = new Point(617, 40);
+            pbFotograf.Location = new Point(1041, 40);
             pbFotograf.Name = "pbFotograf";
             pbFotograf.Size = new Size(277, 222);
             pbFotograf.SizeMode = PictureBoxSizeMode.Zoom;
@@ -339,19 +350,22 @@
             // 
             // btnGeri
             // 
+            btnGeri.BackColor = Color.FromArgb(52, 73, 94);
+            btnGeri.ForeColor = SystemColors.ButtonHighlight;
             btnGeri.Location = new Point(-3, 1);
             btnGeri.Name = "btnGeri";
             btnGeri.Size = new Size(64, 36);
             btnGeri.TabIndex = 8;
             btnGeri.Text = "Geri";
-            btnGeri.UseVisualStyleBackColor = true;
+            btnGeri.UseVisualStyleBackColor = false;
             btnGeri.Click += btnGeri_Click;
             // 
             // UyeIslemEkrani
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1477, 813);
+            BackColor = Color.FromArgb(164, 176, 190);
+            ClientSize = new Size(1382, 813);
             Controls.Add(btnGeri);
             Controls.Add(pbFotograf);
             Controls.Add(btnTemizle);

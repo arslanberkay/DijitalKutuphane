@@ -47,47 +47,60 @@
             // 
             // btnTemizle
             // 
+            btnTemizle.BackColor = Color.FromArgb(52, 73, 94);
+            btnTemizle.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold);
+            btnTemizle.ForeColor = SystemColors.ButtonHighlight;
             btnTemizle.Location = new Point(477, 227);
             btnTemizle.Name = "btnTemizle";
             btnTemizle.Size = new Size(118, 45);
             btnTemizle.TabIndex = 4;
             btnTemizle.Text = "Temizle";
-            btnTemizle.UseVisualStyleBackColor = true;
+            btnTemizle.UseVisualStyleBackColor = false;
             btnTemizle.Click += btnTemizle_Click;
             // 
             // btnGuncelle
             // 
+            btnGuncelle.BackColor = Color.FromArgb(52, 73, 94);
+            btnGuncelle.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold);
+            btnGuncelle.ForeColor = SystemColors.ButtonHighlight;
             btnGuncelle.Location = new Point(341, 227);
             btnGuncelle.Name = "btnGuncelle";
             btnGuncelle.Size = new Size(130, 45);
             btnGuncelle.TabIndex = 3;
             btnGuncelle.Text = "Güncelle";
-            btnGuncelle.UseVisualStyleBackColor = true;
+            btnGuncelle.UseVisualStyleBackColor = false;
             btnGuncelle.Click += btnGuncelle_Click;
             // 
             // btnSil
             // 
+            btnSil.BackColor = Color.FromArgb(52, 73, 94);
+            btnSil.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold);
+            btnSil.ForeColor = SystemColors.ButtonHighlight;
             btnSil.Location = new Point(205, 227);
             btnSil.Name = "btnSil";
             btnSil.Size = new Size(130, 45);
             btnSil.TabIndex = 2;
             btnSil.Text = "Sil";
-            btnSil.UseVisualStyleBackColor = true;
+            btnSil.UseVisualStyleBackColor = false;
             btnSil.Click += btnSil_Click;
             // 
             // btnEkle
             // 
+            btnEkle.BackColor = Color.FromArgb(52, 73, 94);
+            btnEkle.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold);
+            btnEkle.ForeColor = SystemColors.ButtonHighlight;
             btnEkle.Location = new Point(69, 227);
             btnEkle.Name = "btnEkle";
             btnEkle.Size = new Size(130, 45);
             btnEkle.TabIndex = 1;
             btnEkle.Text = "Ekle";
-            btnEkle.UseVisualStyleBackColor = true;
+            btnEkle.UseVisualStyleBackColor = false;
             btnEkle.Click += btnEkle_Click;
             // 
             // dgvYazarlar
             // 
             dgvYazarlar.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dgvYazarlar.BackgroundColor = Color.FromArgb(164, 176, 190);
             dgvYazarlar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvYazarlar.Location = new Point(49, 297);
             dgvYazarlar.Name = "dgvYazarlar";
@@ -162,18 +175,21 @@
             // 
             // btnGeri
             // 
+            btnGeri.BackColor = Color.FromArgb(52, 73, 94);
+            btnGeri.ForeColor = SystemColors.ButtonHighlight;
             btnGeri.Location = new Point(12, -3);
             btnGeri.Name = "btnGeri";
             btnGeri.Size = new Size(64, 36);
             btnGeri.TabIndex = 5;
             btnGeri.Text = "Geri";
-            btnGeri.UseVisualStyleBackColor = true;
+            btnGeri.UseVisualStyleBackColor = false;
             btnGeri.Click += btnGeri_Click;
             // 
             // YazarIslemEkrani
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(164, 176, 190);
             ClientSize = new Size(1308, 792);
             Controls.Add(btnGeri);
             Controls.Add(btnTemizle);

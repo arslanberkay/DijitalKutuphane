@@ -38,68 +38,81 @@
             // 
             // btnUyeGorunumu
             // 
+            btnUyeGorunumu.BackColor = Color.FromArgb(52, 73, 94);
+            btnUyeGorunumu.ForeColor = SystemColors.ButtonHighlight;
             btnUyeGorunumu.Location = new Point(373, 438);
             btnUyeGorunumu.Name = "btnUyeGorunumu";
             btnUyeGorunumu.Size = new Size(193, 70);
             btnUyeGorunumu.TabIndex = 5;
             btnUyeGorunumu.Text = "Üye Görünümü";
-            btnUyeGorunumu.UseVisualStyleBackColor = true;
+            btnUyeGorunumu.UseVisualStyleBackColor = false;
             btnUyeGorunumu.Click += btnUyeGorunumu_Click;
             // 
             // btnUyeIslemleri
             // 
+            btnUyeIslemleri.BackColor = Color.FromArgb(52, 73, 94);
+            btnUyeIslemleri.ForeColor = SystemColors.ButtonHighlight;
             btnUyeIslemleri.Location = new Point(373, 362);
             btnUyeIslemleri.Name = "btnUyeIslemleri";
             btnUyeIslemleri.Size = new Size(193, 70);
             btnUyeIslemleri.TabIndex = 4;
             btnUyeIslemleri.Text = "Üye İşlemleri";
-            btnUyeIslemleri.UseVisualStyleBackColor = true;
+            btnUyeIslemleri.UseVisualStyleBackColor = false;
             btnUyeIslemleri.Click += btnUyeIslemleri_Click;
             // 
             // btnYayineviIslemleri
             // 
+            btnYayineviIslemleri.BackColor = Color.FromArgb(52, 73, 94);
+            btnYayineviIslemleri.ForeColor = SystemColors.ButtonHighlight;
             btnYayineviIslemleri.Location = new Point(373, 286);
             btnYayineviIslemleri.Name = "btnYayineviIslemleri";
             btnYayineviIslemleri.Size = new Size(193, 70);
             btnYayineviIslemleri.TabIndex = 3;
             btnYayineviIslemleri.Text = "Yayınevi İşlemleri";
-            btnYayineviIslemleri.UseVisualStyleBackColor = true;
+            btnYayineviIslemleri.UseVisualStyleBackColor = false;
             btnYayineviIslemleri.Click += btnYayineviIslemleri_Click;
             // 
             // btnKitapIslemleri
             // 
+            btnKitapIslemleri.BackColor = Color.FromArgb(52, 73, 94);
+            btnKitapIslemleri.ForeColor = SystemColors.ButtonHighlight;
             btnKitapIslemleri.Location = new Point(373, 127);
             btnKitapIslemleri.Name = "btnKitapIslemleri";
             btnKitapIslemleri.Size = new Size(193, 70);
             btnKitapIslemleri.TabIndex = 1;
             btnKitapIslemleri.Text = "Kitap İşlemleri";
-            btnKitapIslemleri.UseVisualStyleBackColor = true;
+            btnKitapIslemleri.UseVisualStyleBackColor = false;
             btnKitapIslemleri.Click += btnKitapIslemleri_Click;
             // 
             // btnKategoriIslemleri
             // 
+            btnKategoriIslemleri.BackColor = Color.FromArgb(52, 73, 94);
+            btnKategoriIslemleri.ForeColor = SystemColors.ButtonHighlight;
             btnKategoriIslemleri.Location = new Point(373, 51);
             btnKategoriIslemleri.Name = "btnKategoriIslemleri";
             btnKategoriIslemleri.Size = new Size(193, 70);
             btnKategoriIslemleri.TabIndex = 0;
             btnKategoriIslemleri.Text = "Kategori İşlemleri";
-            btnKategoriIslemleri.UseVisualStyleBackColor = true;
+            btnKategoriIslemleri.UseVisualStyleBackColor = false;
             btnKategoriIslemleri.Click += btnKategoriIslemleri_Click;
             // 
             // btnYazarIslemleri
             // 
+            btnYazarIslemleri.BackColor = Color.FromArgb(52, 73, 94);
+            btnYazarIslemleri.ForeColor = SystemColors.ButtonHighlight;
             btnYazarIslemleri.Location = new Point(373, 203);
             btnYazarIslemleri.Name = "btnYazarIslemleri";
             btnYazarIslemleri.Size = new Size(193, 70);
             btnYazarIslemleri.TabIndex = 2;
             btnYazarIslemleri.Text = "Yazar İşlemleri";
-            btnYazarIslemleri.UseVisualStyleBackColor = true;
+            btnYazarIslemleri.UseVisualStyleBackColor = false;
             btnYazarIslemleri.Click += btnYazarIslemleri_Click;
             // 
             // AdminMenuEkrani
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(164, 176, 190);
             ClientSize = new Size(937, 564);
             Controls.Add(btnUyeGorunumu);
             Controls.Add(btnUyeIslemleri);

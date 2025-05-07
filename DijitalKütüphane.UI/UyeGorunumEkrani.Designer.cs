@@ -33,23 +33,26 @@
             // 
             // btnGeri
             // 
-            btnGeri.Location = new Point(2, 1);
-            btnGeri.Margin = new Padding(4, 4, 4, 4);
+            btnGeri.BackColor = Color.FromArgb(52, 73, 94);
+            btnGeri.ForeColor = SystemColors.ButtonHighlight;
+            btnGeri.Location = new Point(13, 13);
+            btnGeri.Margin = new Padding(4);
             btnGeri.Name = "btnGeri";
-            btnGeri.Size = new Size(80, 45);
+            btnGeri.Size = new Size(75, 40);
             btnGeri.TabIndex = 6;
             btnGeri.Text = "Geri";
-            btnGeri.UseVisualStyleBackColor = true;
+            btnGeri.UseVisualStyleBackColor = false;
             btnGeri.Click += btnGeri_Click;
             // 
             // UyeGorunumEkrani
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(164, 176, 190);
             ClientSize = new Size(1000, 562);
             Controls.Add(btnGeri);
             Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "UyeGorunumEkrani";
             Text = "UyeGorunumEkrani";
             ResumeLayout(false);
