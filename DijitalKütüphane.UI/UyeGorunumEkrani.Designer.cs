@@ -28,38 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnGeri = new Button();
             SuspendLayout();
-            // 
-            // btnGeri
-            // 
-            btnGeri.BackColor = Color.FromArgb(52, 73, 94);
-            btnGeri.ForeColor = SystemColors.ButtonHighlight;
-            btnGeri.Location = new Point(13, 13);
-            btnGeri.Margin = new Padding(4);
-            btnGeri.Name = "btnGeri";
-            btnGeri.Size = new Size(75, 40);
-            btnGeri.TabIndex = 6;
-            btnGeri.Text = "Geri";
-            btnGeri.UseVisualStyleBackColor = false;
-            btnGeri.Click += btnGeri_Click;
             // 
             // UyeGorunumEkrani
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(164, 176, 190);
-            ClientSize = new Size(1000, 562);
-            Controls.Add(btnGeri);
+            ClientSize = new Size(1435, 840);
             Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
             Margin = new Padding(4);
             Name = "UyeGorunumEkrani";
             Text = "UyeGorunumEkrani";
+            Load += UyeGorunumEkrani_Load;
             ResumeLayout(false);
         }
 
         #endregion
-
-        private Button btnGeri;
     }
 }

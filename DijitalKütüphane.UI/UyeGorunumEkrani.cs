@@ -17,11 +17,10 @@ namespace DijitalKütüphane.UI
             InitializeComponent();
         }
 
-        private void btnGeri_Click(object sender, EventArgs e)
+       
+        private void UyeGorunumEkrani_Load(object sender, EventArgs e)
         {
-            AdminMenuEkrani adminMenuEkrani = new AdminMenuEkrani();
-            adminMenuEkrani.ShowDialog();
-            this.Hide();
+
         }
     }
 }

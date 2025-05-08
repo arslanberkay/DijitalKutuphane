@@ -33,18 +33,23 @@
             label2 = new Label();
             txtSifre = new TextBox();
             groupBox1 = new GroupBox();
-            btnGirisYap = new Button();
-            lnkKayitOl = new LinkLabel();
-            lnkSifremiUnuttum = new LinkLabel();
             chkSifreGoster = new CheckBox();
+            lnkSifremiUnuttum = new LinkLabel();
+            lnkKayitOl = new LinkLabel();
+            btnGirisYap = new Button();
+            label3 = new Label();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
             groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
-            label1.Location = new Point(42, 60);
+            label1.Location = new Point(43, 47);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(119, 25);
@@ -54,16 +59,16 @@
             // txtKullaniciAdi
             // 
             txtKullaniciAdi.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
-            txtKullaniciAdi.Location = new Point(179, 57);
+            txtKullaniciAdi.Location = new Point(180, 44);
             txtKullaniciAdi.Name = "txtKullaniciAdi";
             txtKullaniciAdi.Size = new Size(213, 32);
-            txtKullaniciAdi.TabIndex = 1;
+            txtKullaniciAdi.TabIndex = 0;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
-            label2.Location = new Point(42, 107);
+            label2.Location = new Point(43, 94);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(51, 25);
@@ -73,7 +78,7 @@
             // txtSifre
             // 
             txtSifre.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
-            txtSifre.Location = new Point(179, 104);
+            txtSifre.Location = new Point(180, 91);
             txtSifre.Name = "txtSifre";
             txtSifre.Size = new Size(213, 32);
             txtSifre.TabIndex = 1;
@@ -89,69 +94,104 @@
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
             groupBox1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            groupBox1.Location = new Point(269, 78);
+            groupBox1.Location = new Point(254, 185);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(498, 334);
-            groupBox1.TabIndex = 2;
+            groupBox1.Size = new Size(498, 319);
+            groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
+            // 
+            // chkSifreGoster
+            // 
+            chkSifreGoster.AutoSize = true;
+            chkSifreGoster.Location = new Point(399, 94);
+            chkSifreGoster.Name = "chkSifreGoster";
+            chkSifreGoster.Size = new Size(94, 32);
+            chkSifreGoster.TabIndex = 2;
+            chkSifreGoster.Text = "Göster";
+            chkSifreGoster.UseVisualStyleBackColor = true;
+            chkSifreGoster.CheckedChanged += chkSifreGoster_CheckedChanged;
+            // 
+            // lnkSifremiUnuttum
+            // 
+            lnkSifremiUnuttum.AutoSize = true;
+            lnkSifremiUnuttum.LinkColor = SystemColors.ControlDarkDark;
+            lnkSifremiUnuttum.Location = new Point(43, 254);
+            lnkSifremiUnuttum.Name = "lnkSifremiUnuttum";
+            lnkSifremiUnuttum.Size = new Size(164, 28);
+            lnkSifremiUnuttum.TabIndex = 4;
+            lnkSifremiUnuttum.TabStop = true;
+            lnkSifremiUnuttum.Text = "Şifremi Unuttum";
+            lnkSifremiUnuttum.LinkClicked += lnkSifremiUnuttum_LinkClicked;
+            // 
+            // lnkKayitOl
+            // 
+            lnkKayitOl.AutoSize = true;
+            lnkKayitOl.LinkColor = SystemColors.ControlDarkDark;
+            lnkKayitOl.Location = new Point(311, 254);
+            lnkKayitOl.Name = "lnkKayitOl";
+            lnkKayitOl.Size = new Size(82, 28);
+            lnkKayitOl.TabIndex = 5;
+            lnkKayitOl.TabStop = true;
+            lnkKayitOl.Text = "Kayıt Ol";
             // 
             // btnGirisYap
             // 
             btnGirisYap.BackColor = Color.FromArgb(52, 73, 94);
             btnGirisYap.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             btnGirisYap.ForeColor = SystemColors.ButtonHighlight;
-            btnGirisYap.Location = new Point(42, 156);
+            btnGirisYap.Location = new Point(43, 143);
             btnGirisYap.Name = "btnGirisYap";
             btnGirisYap.Size = new Size(350, 57);
-            btnGirisYap.TabIndex = 2;
+            btnGirisYap.TabIndex = 3;
             btnGirisYap.Text = "Giriş Yap";
             btnGirisYap.UseVisualStyleBackColor = false;
+            btnGirisYap.Click += btnGirisYap_Click;
             // 
-            // lnkKayitOl
+            // label3
             // 
-            lnkKayitOl.AutoSize = true;
-            lnkKayitOl.LinkColor = SystemColors.ControlDarkDark;
-            lnkKayitOl.Location = new Point(310, 267);
-            lnkKayitOl.Name = "lnkKayitOl";
-            lnkKayitOl.Size = new Size(82, 28);
-            lnkKayitOl.TabIndex = 3;
-            lnkKayitOl.TabStop = true;
-            lnkKayitOl.Text = "Kayıt Ol";
+            label3.Font = new Font("Segoe Print", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            label3.Location = new Point(254, 31);
+            label3.Name = "label3";
+            label3.Size = new Size(498, 59);
+            label3.TabIndex = 3;
+            label3.Text = "Dijital Kütüphane";
+            label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // lnkSifremiUnuttum
+            // pictureBox1
             // 
-            lnkSifremiUnuttum.AutoSize = true;
-            lnkSifremiUnuttum.LinkColor = SystemColors.ControlDarkDark;
-            lnkSifremiUnuttum.Location = new Point(42, 267);
-            lnkSifremiUnuttum.Name = "lnkSifremiUnuttum";
-            lnkSifremiUnuttum.Size = new Size(164, 28);
-            lnkSifremiUnuttum.TabIndex = 3;
-            lnkSifremiUnuttum.TabStop = true;
-            lnkSifremiUnuttum.Text = "Şifremi Unuttum";
+            pictureBox1.Location = new Point(383, 93);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(234, 82);
+            pictureBox1.TabIndex = 4;
+            pictureBox1.TabStop = false;
             // 
-            // chkSifreGoster
+            // pictureBox2
             // 
-            chkSifreGoster.AutoSize = true;
-            chkSifreGoster.Location = new Point(398, 107);
-            chkSifreGoster.Name = "chkSifreGoster";
-            chkSifreGoster.Size = new Size(94, 32);
-            chkSifreGoster.TabIndex = 4;
-            chkSifreGoster.Text = "Göster";
-            chkSifreGoster.UseVisualStyleBackColor = true;
+            pictureBox2.Location = new Point(929, 12);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(45, 42);
+            pictureBox2.TabIndex = 5;
+            pictureBox2.TabStop = false;
             // 
             // GirisSayfasi
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(164, 176, 190);
-            ClientSize = new Size(1042, 657);
+            ClientSize = new Size(986, 640);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
+            Controls.Add(label3);
             Controls.Add(groupBox1);
             Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "GirisSayfasi";
             Text = "GirisSayfasi";
+            Load += GirisSayfasi_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -166,5 +206,8 @@
         private LinkLabel lnkSifremiUnuttum;
         private LinkLabel lnkKayitOl;
         private CheckBox chkSifreGoster;
+        private Label label3;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }
