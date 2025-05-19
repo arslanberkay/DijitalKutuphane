@@ -62,5 +62,12 @@ namespace DijitalKütüphane.UI
             sifreYenilemeEkrani.Show();
             this.Hide();
         }
+
+        private void lnkKayitOl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            KayitOlEkrani kayitOlEkrani = new KayitOlEkrani();
+            kayitOlEkrani.Show();
+            this.Hide();
+        }
     }
 }

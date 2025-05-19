@@ -133,6 +133,7 @@
             lnkKayitOl.TabIndex = 5;
             lnkKayitOl.TabStop = true;
             lnkKayitOl.Text = "Kayıt Ol";
+            lnkKayitOl.LinkClicked += lnkKayitOl_LinkClicked;
             // 
             // btnGirisYap
             // 
