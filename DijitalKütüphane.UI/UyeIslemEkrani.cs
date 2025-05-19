@@ -190,8 +190,13 @@ namespace DijitalKütüphane.UI
             UyeBilgileriTemizle();
         }
 
-        string fotografDosyaYolu;
         private void btnFotografSec_Click(object sender, EventArgs e)
+        {
+            FotografSec();
+        }
+
+        string fotografDosyaYolu;
+        private void FotografSec()
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Resim Dosyaları|*.jpg;,*.jpeg;,*.png;";
