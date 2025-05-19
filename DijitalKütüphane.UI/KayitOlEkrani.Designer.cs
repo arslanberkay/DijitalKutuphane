@@ -116,12 +116,13 @@
             btnFotografSec.BackColor = Color.FromArgb(52, 73, 94);
             btnFotografSec.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
             btnFotografSec.ForeColor = SystemColors.ButtonHighlight;
-            btnFotografSec.Location = new Point(439, 468);
+            btnFotografSec.Location = new Point(439, 461);
             btnFotografSec.Name = "btnFotografSec";
             btnFotografSec.Size = new Size(90, 34);
             btnFotografSec.TabIndex = 5;
             btnFotografSec.Text = "Seç";
             btnFotografSec.UseVisualStyleBackColor = false;
+            btnFotografSec.Click += btnFotografSec_Click;
             // 
             // dtpDogumTarihi
             // 
@@ -150,6 +151,7 @@
             chkSifreGoster.TabIndex = 2;
             chkSifreGoster.Text = "Göster";
             chkSifreGoster.UseVisualStyleBackColor = true;
+            chkSifreGoster.CheckedChanged += chkSifreGoster_CheckedChanged;
             // 
             // txtFotograf
             // 
