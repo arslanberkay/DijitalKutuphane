@@ -1,5 +1,6 @@
 ﻿using DijitalKütüphane.UI.Context;
 using DijitalKütüphane.UI.Data;
+using DijitalKütüphane.UI.Helper;
 using Microsoft.EntityFrameworkCore.Query;
 using System;
 using System.Collections.Generic;
@@ -25,6 +26,7 @@ namespace DijitalKütüphane.UI
         private void KayitOlEkrani_Load(object sender, EventArgs e)
         {
             cbUyelikSuresi.Items.AddRange(new string[] { "3 ay", "6 ay", "9 ay", "1 yıl" });
+            txtSifre.PasswordChar = '*';
         }
 
         private int SecilenUyelikSuresi()
@@ -58,10 +60,10 @@ namespace DijitalKütüphane.UI
                 !txtSoyad.ValidateTextBox("Soyad alanı doldurulmalıdır!") ||
                 !txtKullaniciAdi.ValidateTextBox("Kullanıcı adı alanı doldurulmalıdır!") ||
                 !txtSifre.ValidateTextBox("Şifre alanı doldurulmalıdır!") ||
+                !mtxtTelefon.ValidateMaskedTextBox("Telefon alanı doldurulmalıdır!") ||
                 !txtEmail.ValidateTextBox("Email alanı doldurulmalıdır!") ||
                 !txtUlke.ValidateTextBox("Ülke alanı doldurulmalıdır!") ||
                 !txtSehir.ValidateTextBox("Şehir alanı doldurulmalıdır!") ||
-                !mtxtTelefon.ValidateMaskedTextBox("Telefon alanı doldurulmalıdır!") ||
                 !dtpDogumTarihi.ValidateDateTimePicker("Doğum tarihi ileri bir tarih olamaz!") ||
                 !cbUyelikSuresi.ValidateComboBox("Lütfen bir üyelik süresi seçiniz!"))
             {
@@ -73,7 +75,7 @@ namespace DijitalKütüphane.UI
                 Ad = txtAd.Text,
                 Soyad = txtSoyad.Text,
                 KullaniciAdi = txtKullaniciAdi.Text,
-                Sifre = txtSifre.Text,
+                Sifre = Sifreleme.Sha256Hash(txtSifre.Text),
                 DogumTarihi = dtpDogumTarihi.Value.Date,
                 Telefon = mtxtTelefon.Text,
                 Email = txtEmail.Text,
@@ -98,7 +100,7 @@ namespace DijitalKütüphane.UI
 
         private void chkSifreGoster_CheckedChanged(object sender, EventArgs e)
         {
-            if (chkSifreGoster.Checked)
+            if (!chkSifreGoster.Checked)
             {
                 txtSifre.PasswordChar = '*';
             }

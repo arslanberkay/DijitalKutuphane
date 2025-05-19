@@ -1,4 +1,5 @@
 ﻿using DijitalKütüphane.UI.Context;
+using DijitalKütüphane.UI.Helper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,17 +25,46 @@ namespace DijitalKütüphane.UI
         private void GirisSayfasi_Load(object sender, EventArgs e)
         {
             txtSifre.PasswordChar = '*';
+            //TumSifreleriGuvenliYap();
+            //AdminSifreleriniGuvenliYap();
+
+        }
+
+        private void TumSifreleriGuvenliYap()
+        {
+            foreach (var uye in _db.Uyeler)
+            {
+                if (uye.Sifre.Length != 64)
+                {
+                    uye.Sifre = Sifreleme.Sha256Hash(uye.Sifre);
+                }
+            }
+
+            _db.SaveChanges();
+        }
+
+        private void AdminSifreleriniGuvenliYap()
+        {
+            foreach (var admin in _db.Adminler)
+            {
+                if (admin.Sifre.Length != 64)
+                {
+                    admin.Sifre = Sifreleme.Sha256Hash(admin.Sifre);
+                }
+            }
+
+            _db.SaveChanges();
         }
 
         private void btnGirisYap_Click(object sender, EventArgs e)
         {
-            if (_db.Adminler.Any(a => a.KullaniciAdi == txtKullaniciAdi.Text && a.Sifre == txtSifre.Text))
+            if (_db.Adminler.Any(a => a.KullaniciAdi == txtKullaniciAdi.Text && a.Sifre == Sifreleme.Sha256Hash(txtSifre.Text)))
             {
                 AdminMenuEkrani adminMenuEkrani = new AdminMenuEkrani();
                 adminMenuEkrani.Show();
                 this.Hide();
             }
-            else if (_db.Uyeler.Any(u => u.KullaniciAdi == txtKullaniciAdi.Text && u.Sifre == txtSifre.Text))
+            else if (_db.Uyeler.Any(u => u.KullaniciAdi == txtKullaniciAdi.Text && u.Sifre == Sifreleme.Sha256Hash(txtSifre.Text)))
             {
                 UyeGorunumEkrani uyeGorunumEkrani = new UyeGorunumEkrani();
                 uyeGorunumEkrani.Show();

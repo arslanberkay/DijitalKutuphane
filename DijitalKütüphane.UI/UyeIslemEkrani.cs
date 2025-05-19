@@ -1,5 +1,6 @@
 ﻿using DijitalKütüphane.UI.Context;
 using DijitalKütüphane.UI.Data;
+using DijitalKütüphane.UI.Helper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -72,7 +73,7 @@ namespace DijitalKütüphane.UI
                 Ad = txtAd.Text,
                 Soyad = txtSoyad.Text,
                 KullaniciAdi = txtKullaniciAdi.Text,
-                Sifre = txtSifre.Text,
+                Sifre = Sifreleme.Sha256Hash(txtSifre.Text),
                 DogumTarihi = dtpDogumTarihi.Value,
                 Telefon = mtxtTelefon.Text,
                 Email = txtEmail.Text,
