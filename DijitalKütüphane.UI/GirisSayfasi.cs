@@ -66,8 +66,8 @@ namespace DijitalKütüphane.UI
             }
             else if (_db.Uyeler.Any(u => u.KullaniciAdi == txtKullaniciAdi.Text && u.Sifre == Sifreleme.Sha256Hash(txtSifre.Text)))
             {
-                UyeGorunumEkrani uyeGorunumEkrani = new UyeGorunumEkrani();
-                uyeGorunumEkrani.Show();
+                UyeMenuEkrani uyeMenuEkrani = new UyeMenuEkrani();
+                uyeMenuEkrani.Show();
                 this.Hide();
             }
         }

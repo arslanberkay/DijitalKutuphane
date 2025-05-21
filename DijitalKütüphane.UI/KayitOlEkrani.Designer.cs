@@ -64,7 +64,7 @@
             // 
             pbFotograf.Location = new Point(733, 83);
             pbFotograf.Name = "pbFotograf";
-            pbFotograf.Size = new Size(295, 258);
+            pbFotograf.Size = new Size(401, 313);
             pbFotograf.SizeMode = PictureBoxSizeMode.Zoom;
             pbFotograf.TabIndex = 9;
             pbFotograf.TabStop = false;
@@ -358,7 +358,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(164, 176, 190);
-            ClientSize = new Size(1496, 802);
+            ClientSize = new Size(1245, 802);
             Controls.Add(btnKayitOl);
             Controls.Add(btnGeri);
             Controls.Add(pbFotograf);

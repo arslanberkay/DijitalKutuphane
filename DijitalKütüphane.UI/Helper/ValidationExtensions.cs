@@ -21,7 +21,7 @@ namespace DijitalKütüphane.UI.Helper
 
         public static bool ValidateMaskedTextBox(this MaskedTextBox mtxt, string mesaj)
         {
-            if (string.IsNullOrWhiteSpace(mtxt.Text))
+            if (!mtxt.MaskFull)
             {
                 MessageBox.Show(mesaj);
                 return false;
