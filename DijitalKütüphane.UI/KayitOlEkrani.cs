@@ -51,6 +51,16 @@ namespace DijitalKütüphane.UI
             return uyelikSuresi;
         }
 
+        private bool UyeKullaniciAdiKontrolü()
+        {
+            if (_db.Uyeler.Any(u => u.KullaniciAdi == txtKullaniciAdi.Text))
+            {
+                MessageBox.Show("Bu kullanıcı adı kullanımda!");
+                return false;
+            }
+            return true;
+        }
+
 
 
         private void btnKayitOl_Click(object sender, EventArgs e)
@@ -69,6 +79,8 @@ namespace DijitalKütüphane.UI
             {
                 return;
             }
+
+            if (!UyeKullaniciAdiKontrolü()) { return; }
 
             Uye uye = new Uye
             {
@@ -120,6 +132,33 @@ namespace DijitalKütüphane.UI
                 fotografDosyaYolu = openFileDialog.FileName;
                 pbFotograf.Image = Image.FromFile(fotografDosyaYolu);
                 txtFotograf.Text = fotografDosyaYolu;
+            }
+        }
+
+        private void KayitAlanlariniTemizle()
+        {
+            foreach (var control in grpKayit.Controls)
+            {
+                if (control is TextBox txt)
+                {
+                    txt.Text = string.Empty;
+                }
+                if (control is MaskedTextBox mtxt)
+                {
+                    mtxt.Text = string.Empty;
+                }
+                if (control is DateTimePicker dtp)
+                {
+                    dtp.Value = DateTime.Now;
+                }
+                if (control is ComboBox cb)
+                {
+                    cb.SelectedItem = null;
+                }
+                if (control is CheckBox chk)
+                {
+                    chk.Checked = false;
+                }
             }
         }
     }
